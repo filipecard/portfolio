@@ -1,0 +1,133 @@
+.mainDiv {
+    height: 70%;
+    width: 100%;
+}
+
+p {
+    font-family: "Fira Code";
+    color: var(--primary-color);
+    text-align: center;
+    font-size: medium;
+}
+
+.topDiv {
+    display: flex;
+    height: 82.5px;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0 5px 5px -5px var(--secondary-collor);
+
+}
+
+.title {
+    font-size: 56px;
+    font-family: "Fira Code";
+    margin-top: 35px;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 4px var(--primary-color);
+}
+
+.contentAreaDiv {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.socialDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.icons img {
+    width: 64px;
+}
+
+.icons img:hover {
+    filter: invert(27%) sepia(50%) saturate(2900%) hue-rotate(300deg) brightness(104%) contrast(97%);
+}
+
+.mainContentDiv {
+    background-color: var(--background-secondary);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.mainContentDiv hr {
+    background-color: var(--secondary-collor);
+    height: 1px;
+    border: none;
+    width: 100%;
+}
+
+.conteudoSumary {
+    padding: 0 100px 0 100px;
+}
+
+.conteudoSumary a {
+    color: rgb(34, 212, 212);
+    text-decoration: none;
+}
+
+.cardsContentDiv{
+    background-color: var(--background-secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    
+}
+
+.cardItem {
+    background-color: var(--secondary-collor);
+    max-width: 200px;
+    
+}
+
+.cardItem a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.cardGameItemHeaderImage {
+    background-image: url('../assets/gameIcon.jpg');
+    background-size: cover;
+    
+}
+
+.cardSourceItemHeaderImage {
+    background-image: url('../assets/source.png');
+    background-size: cover;
+}
+
+
+
+.footerContentDiv{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    
+}
+
+.footerContentDiv a {
+    color: var(--primary-color);
+    text-decoration: none;
+}

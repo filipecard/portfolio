@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    --primary-color: #ffffff;
+    --background-main: #141414;
+    --background-secondary: #1b1b1b;
+    --secondary-collor: #8f2a2d;
+    --primary-shadow: #18505d;
+
+    margin: 0; 
+    font-family: "Fira Code";
+    background-color: var(--background-main);
+}
