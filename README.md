@@ -1,7 +1,7 @@
 # Portfolio
 
-It's my [Portfolio](https://filipecard.github.io/portfolio/)
-I hope you enjoy
+This is my [Portfolio](https://filipecard.github.io/portfolio/)
+hope you like it
 
 ## Tech
   
