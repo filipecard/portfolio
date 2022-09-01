@@ -5,6 +5,10 @@ hope you like it
 
 ## Tech
   
-Angular:
-  version 14.2.1
+I'm using Angular version 14.2.1, this is a simple example of how to use html, css and some Angular features to create an About Me page.
+
  
+Highlighting the Mat Card Module, a component of Angular Material.
+
+Import
+- import {MatCardModule} from '@angular/material/card';
