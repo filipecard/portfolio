@@ -16,4 +16,4 @@ Highlighting the Mat Card Module, a component of Angular Material.
 > import {MatCardModule} from '@angular/material/card';
 
  - Exemple
-> "<mat-card> Simple card </mat-card>"
+> "\<mat-card> Simple card </mat-card>"
