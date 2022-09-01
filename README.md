@@ -11,4 +11,4 @@ I'm using Angular version 14.2.1, this is a simple example of how to use html, c
 Highlighting the Mat Card Module, a component of Angular Material.
 
 Import
-- import {MatCardModule} from '@angular/material/card';
+> import {MatCardModule} from '@angular/material/card';
