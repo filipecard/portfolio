@@ -17,3 +17,11 @@ Highlighting the [MatCardModule](https://material.angular.io/components/card/ove
 
  - Exemple
 > \<mat-card> Simple card \</mat-card>
+
+
+### Build project
+
+> ng build
+
+This command creates/updates a directory called "dist" with the built files.
+
