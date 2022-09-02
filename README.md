@@ -1,27 +1,27 @@
-# portfolio
+# Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+This is my [Portfolio](https://filipecard.github.io/portfolio/)
+hope you like it
 
-## Development server
+## Tech
+  
+I'm using Angular version 14.2.1, this is a simple example of how to use html, css and some Angular features to create an About Me page.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ 
+Highlighting the [MatCardModule](https://material.angular.io/components/card/overview), a component of Angular Material.
 
-## Code scaffolding
+### MatCard
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ - Import
+> import {MatCardModule} from '@angular/material/card';
 
-## Build
+ - Exemple
+> \<mat-card> Simple card \</mat-card>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Build project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> ng build
 
-## Running end-to-end tests
+This command creates/updates a directory called "dist" with the built files.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
