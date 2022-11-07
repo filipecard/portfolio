@@ -1,9 +1,17 @@
-<div class="mainDiv">]
+
+<div class="mainDiv">
+
+  <span class="icons" style="justify-content: left;">
+    <img src="https://cdn-icons-png.flaticon.com/512/3909/3909383.png" alt="eua-icon"
+      style="width: 50px; height: 50px; padding: 10px;" (click)="englishLanguage()">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/3909/3909370.png" alt="br-icon"
+      style="width: 50px; height: 50px; padding: 10px;" (click)="portugueseLanguage()">
+  </span>
 
   <div class="topDiv">
-
     <h1 class="title">
-      Welcome
+      {{data.welcome}}
     </h1>
 
   </div>
@@ -11,7 +19,7 @@
   <div class="contentAreaDiv">
     <section class="socialDiv">
 
-      <p style="font-size: 20px; font-family:'Fira Code';">I'm Filipe Cardoso</p>
+      <p style="font-size: 20px; font-family:'Fira Code';">{{data.me}}</p>
 
       <div class="icons">
         <span>
@@ -33,39 +41,34 @@
       <div>
         <div style="display:flex; flex-direction:row;">
           <hr>
-          <p style="font-size: large;">Summary</p>
+          <p style="font-size: large;">{{data.sumary}}</p>
           <hr>
         </div>
         <div>
-          <p class="conteudoSumary"> I am 22 years old, in the last year of college in the Systems Analysis and
-            Development course, and have a huge amount of knowledge acquired during my formative years </p>
-          <p class="conteudoSumary"> Interested in game development, with strong knowledge of Godot Engine and Unreal
-            Engine(blueprint). Currently developing my graduation project using Unreal creating a virtual environment
-            for the industry. </p>
-          <p class="conteudoSumary">Currently interested and learning more and more about java and spring boot</p>
-          <p class="conteudoSumary">I like all musical styles, always varying a lot what I listen to.</p>
-          <p class="conteudoSumary">I really like digital art, and I do some cool stuff sometimes, if you want to see
-            it,
-            <a href="https://www.instagram.com/galeriarabisco/">click here</a>
+          <p class="conteudoSumary"> {{data.sumary0}} </p>
+          <p class="conteudoSumary"> {{data.sumary1}} </p>
+          <p class="conteudoSumary"> {{data.sumary2}}</p>
+          <p class="conteudoSumary"> {{data.sumary3}}</p>
+          <p class="conteudoSumary"> {{data.sumary4}}
+            <a href="https://www.instagram.com/galeriarabisco/">{{data.clickHere}}</a>
           </p>
         </div>
       </div>
       <div>
         <div style="display:flex; flex-direction:row;">
           <hr>
-          <p style="font-size: large;">Resume</p>
+          <p style="font-size: large;">{{data.resume}}</p>
           <hr>
 
         </div>
         <p class="conteudoSumary">
-          <a href="https://drive.google.com/file/d/13xMJjXOCzqt5SBsmmo3lx8idGsPvNUiY/view?usp=sharing">Link to my
-            resume</a>
+          <a href="https://drive.google.com/file/d/13xMJjXOCzqt5SBsmmo3lx8idGsPvNUiY/view?usp=sharing">{{data.linkResume}}</a>
         </p>
       </div>
       <div>
         <div style="display:flex; flex-direction:row;">
           <hr>
-          <p style="font-size: large;">Projects</p>
+          <p style="font-size: large;">{{data.projects}}</p>
           <hr>
         </div>
 

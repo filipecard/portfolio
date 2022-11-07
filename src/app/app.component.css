@@ -55,7 +55,7 @@ p {
 }
 
 .icons img:hover {
-    filter: invert(27%) sepia(50%) saturate(2900%) hue-rotate(300deg) brightness(104%) contrast(97%);
+    filter: invert(30%) sepia(20%) saturate(1000%) hue-rotate(20deg) brightness(150%) contrast(120%);
 }
 
 .mainContentDiv {
