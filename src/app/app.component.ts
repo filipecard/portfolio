@@ -27,7 +27,7 @@ export class AppComponent {
     public portuguese = {
         "welcome": "Bem vindo",
         "me": "Eu sou Filipe Cardoso",
-        "sumary": "Sumário",
+        "sumary": "Resumo",
         "sumary0": "Tenho 22 anos, cursando o último ano da faculdade no curso de Análise e Desenvolvimento de Sistemas, e possuo uma enorme quantidade de conhecimentos adquiridos durante meus anos de formação",
         "sumary1": "Me interesso em desenvolvimento de jogos, com forte conhecimento de Godot Engine e Unreal Engine (blueprint). Atualmente desenvolvendo meu projeto de graduação utilizando o Unreal criando um ambiente virtual para a indústria.",
         "sumary2": "Atualmente interessado e aprendendo cada vez mais sobre java e spring boot",
