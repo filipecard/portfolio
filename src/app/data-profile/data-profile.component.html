@@ -1,13 +1,45 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <br *ngFor="let item of [1,2,3,4,5,6,7,8]">
-   
-<div class="datainfo">
+
+<div class="workinformation">
+
+    <div class="datainfo">
         <img class="profileimage" src="../../assets/me.png" alt="Avatar">
         <div class="aboutme">
-        <p>Filipe Cardoso Oliveira</p>
-        <p style="color: white; -webkit-text-stroke: 2  px rgb(7, 7, 7);">. . .</p>
-        <br>
-        <p>Full-Stack Developer</p> 
+            <p>HI THERE! I'M</p>
+            <p style="color: orangered;">FILIPE CARDOSO</p>
+            <br>
+            <p style="font-size: 20px; width: 600px; height: auto;"> I'm a <b style="color: orangered;"> Full-Stack Developer</b> and a <b style="color: orangered;"> Game Developer</b>. Passionate about the area, I'm always looking to learn a little bit of everything. </p>
+        </div>
     </div>
+
+    <div class="datainfo">
+        <a (click)="redirectMyResume()">
+            <button type="submit" class="myresume">
+                Resume
+            </button>
+        </a>
+        
+        <div class="sizedbox"></div>
+
+        <a (click)="redirectMyGithub()">
+            <button type="submit" class="socialmedia">
+                <i class="fa fa-github" style="font-size:40px"></i>
+            </button>
+        </a>
+        <div class="sizedbox" style="width: 20px;"></div>
+        <a (click)="redirectMyInstagran()">
+            <button type="submit" class="socialmedia">
+                <i class="fa fa-instagram" style="font-size:40px"></i>
+            </button>
+        </a>
+    
+
+    </div>
+
+
+
 </div>
 

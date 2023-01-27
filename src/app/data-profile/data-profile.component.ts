@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class DataProfileComponent {
 
+  redirectMyResume(){
+    window.open("https://drive.google.com/file/d/1z7U5NCXrN_frOULOeKuX-gR99xVLE0gN/view?usp=sharing", "_blank");
+  }
+
+  redirectMyGithub(){
+    window.open("https://github.com/filipecard", "_blank");
+  }
+
+  redirectMyInstagran(){
+    window.open("https://www.instagram.com/filipe_caroli/", "_blank");
+  }
 }
