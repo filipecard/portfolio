@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import { DataProfileComponent } from './data-profile/data-profile.component';
 
 @NgModule({
   declarations: [	
-    AppComponent,
+    AppComponent, DataProfileComponent,
    ],
   imports: [
     BrowserModule,

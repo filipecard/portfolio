@@ -1,0 +1,27 @@
+.datainfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+
+
+
+.profileimage {
+    height: auto;
+    max-width: 20%;
+    border-radius: 80%;
+    background-color: #ffffffed;
+    box-shadow: 0 2px 8px rgb(35 32 10 / 40%);
+}
+
+.aboutme{
+    padding: 50px;
+    text-align: center;
+    font-family: fangsong;
+    font-size: 35px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(255, 231, 217);
+    box-shadow: 0 5px 10px rgba(79, 79, 177, 0.1);
+}
