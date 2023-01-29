@@ -1,0 +1,34 @@
+.appbar{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100%;
+    background-color: orangered;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    outline: none;
+    transition: all 0.1s linear;
+}
+
+.select-options{
+    color: orangered; 
+    height: 60px;
+    width: 60px;
+    background: white;
+    border-color: white;
+    border-radius: 50%;
+    font-size:35px;
+}
+
+
+.select-options:hover {
+    height: 70px;
+    width: 70px;
+    font-size:45px;
+
+}   
+

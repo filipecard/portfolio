@@ -1,9 +1,11 @@
 .workinformation{
+    
     display: flex;
     align-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
+    
 }
 
 .datainfo {
@@ -61,6 +63,7 @@ button{
 
 
 .socialmedia:hover{
+
     color: white;
     background-color: rgba(255, 68, 0, 0.849);
     border-color: white;
@@ -71,4 +74,8 @@ button{
 
 .sizedbox{
     width: 650px;
+}
+
+b{
+    color: orangered;
 }

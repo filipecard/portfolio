@@ -2,16 +2,22 @@
 
 .workpage{
     display: flex;
-    height: fit-content;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
-.appbar{
+
+.workinformation{
+    
     display: flex;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
     flex-direction: column;
-    height: 980px;
-    width: 10%;
-    background-color: #ec5928;
 }

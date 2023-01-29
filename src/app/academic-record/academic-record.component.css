@@ -1,0 +1,27 @@
+
+.work-information{
+    display: flex; 
+    height: auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    font-family: fangsong;
+}
+
+.data-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-formatation{
+    font-size: 23px;
+    padding: 10px 150px 10px 150px;
+}
+
+
+b{
+    color: orangered;
+}
