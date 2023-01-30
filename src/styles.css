@@ -3,6 +3,7 @@
 html, body { height: 100%; }
 body { 
     --primary-color: rgb(248, 251, 255);
+    --second-color: orangered;
     margin: 0; 
     font-family: "Fira Code";
     background-color: var(--primary-color);

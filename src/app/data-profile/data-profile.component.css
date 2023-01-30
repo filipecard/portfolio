@@ -1,3 +1,5 @@
+
+
 .workinformation{
     display: flex;
     align-content: space-between;
@@ -18,7 +20,7 @@
     height: auto;
     max-width: 16%;
     border-radius: 80%;
-    background-color: #ffffffed;
+    background-color: var(--primary-color);
     box-shadow: 0 2px 8px rgb(35 32 10 / 40%);
 }
 
@@ -35,36 +37,36 @@ button{
 }
 
 .myresume{
-    color: rgb(248, 251, 255);
+    color: var(--primary-color);
     font-size: 23px;
     font-weight: bold;
     border-radius: 20px;
     padding: 15px 25px 15px  25px;
-    background-color: orangered;
-    border-color: white;
+    background-color: var(--second-color);
+    border-color: var(--primary-color)white;
 }
 
 .myresume:hover{
-    color: orangered;
+    color: var(--second-color);
     background-color: white;
-    border-color: orangered;
+    border-color: var(--second-color);
 }
 
 
 .socialmedia{
-    color: orangered;
-    background-color:white ;
+    color: var(--second-color);
+    background-color: white ;
     height: 60px;
     width: 60px;
     border-radius: 10px;
-    border-color: rgb(255, 255, 255);
+    border-color: var(--primary-color);
 }
 
 
 .socialmedia:hover{
 
     color: white;
-    background-color: rgba(255, 68, 0, 0.849);
+    background-color: var(--second-color);
     border-color: white;
 }
 
@@ -76,5 +78,5 @@ button{
 }
 
 b{
-    color: orangered;
+    color: var(--second-color);
 }

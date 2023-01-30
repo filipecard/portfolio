@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100px;
     height: 100%;
-    background-color: orangered;
+    background-color: var(--second-color);
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
@@ -15,11 +15,11 @@ button{
 }
 
 .select-options{
-    color: orangered; 
+    color: var(--second-color); 
     height: 60px;
     width: 60px;
-    background: white;
-    border-color: white;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
     border-radius: 50%;
     font-size:35px;
 }

@@ -24,7 +24,7 @@
 
 
 b{
-    color: orangered;
+    color: var(--second-color);
 }
 
 .text-background{
