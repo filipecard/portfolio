@@ -6,7 +6,7 @@
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
-    padding: 200px 100px 150px 100px;
+    padding: 100px 200px 150px 200px;
     font-family: fangsong;
 }
 
@@ -28,10 +28,9 @@ b{
 }
 
 .text-background{
-    padding: 10px;
+    padding: 20px;
     border-radius: 2%;
     border-width: 30px;
     background-color: rgba(66, 66, 66, 0.048);
-    
     box-shadow: 0 2px 8px rgb(35 32 10 / 40%);
 }

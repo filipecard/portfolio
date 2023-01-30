@@ -1,0 +1,69 @@
+
+<div class="work-information" >
+
+    
+    <p></p>
+    <mat-expansion-panel showToggle 
+        [expanded]="controllerHardSkills" 
+        (opened)="closeSoftSkills()"
+        (closed)="openSoftSkills()"
+    >   
+        <mat-expansion-panel-header >
+          <mat-panel-title style="flex-grow: 4;">
+            <div class="text-formatation" style="font-size: 35px;"> <b>Hard Skills: </b></div>
+          </mat-panel-title>
+          <!-- <mat-panel-description>
+            This is a summary of the content
+          </mat-panel-description> -->
+        </mat-expansion-panel-header>
+        <div class="text-background">
+            <li class="text-formatation">
+                <b>Python:</b> Primeira linguágem aprendia. Aplicada em projetos web de forma simples com Django, mas conhecimentos mais aprofundados com <b>Web Scraping</b> e <b>Data Science</b>, utilizando de bibliotecas como <b>pandas</b>, <b>matplotlib</b>, <b>beautifulsoup</b>, <b>numpy</b>, etc...Com alguns certificações apresentaveis:
+            <p></p>
+            <p class="list-certifications">
+                <b (click)="showCertificationPCAP()"><a> PCAP: Programming Essentials in Python</a></b>
+            </p>
+            <p class="list-certifications">
+                <b (click)="showCertificationCodingTank()"><a> Ada & Americanas: Coding Tank</a></b>
+            </p>
+            </li>
+        </div>
+    
+        <br>
+    
+        <div class="text-background">
+            <li class="text-formatation">
+                <b>Angular & Delphi:</b> O framkework e a linguágem em questão, foram aprendidos e desenvolvidas em conjunto, durante o <b>estágio</b> na empresa <b>Simples Informatica e Consultoria LTDA</b>. Durante 9 meses foram gerados conhecimentos necessários para formação profissional como <b>Full-Stack</b> com tais ferramentas, além de algumas soft skills. Nesse estágio tinha como responsabilidades: <b>a criação de telas</b>, <b>refatoração de códigos</b>, <b>análise de requisitos</b> e <b>criação de novos serviços</b>.
+            </li>
+        </div>
+    
+        <br>
+    
+        <div class="text-background">
+            <li class="text-formatation">
+                <b>PostgreSQL & Git:</b> Sobre banco de dados e versionamento de código, são habilidades desenvolvidas durante a   <b>formaçao acadêmica</b> e ainda mais reforçadas durante o <b>estágio</b>, com experiência em modelagem de banco de dados e formatação das informações com PostgreSQL. Com o Git, gerenciamento de tarefas, controle de versão e padronização de commits, ultilizando ferramentas auxiliares para gerencia de equipe.
+            </li>
+        </div>
+    </mat-expansion-panel>
+
+    <br>
+
+    <mat-expansion-panel showToggle [expanded]="controllerSoftSkills" 
+        (opened)="openSoftSkills()"
+        (closed)="closeSoftSkills()" 
+    >
+        <mat-expansion-panel-header >
+            <mat-panel-title style="flex-grow: 4;">
+            <div class="text-formatation" style="font-size: 35px;"> <b>Soft Skills: </b></div>
+            </mat-panel-title>
+            <!-- <mat-panel-description>
+            This is a summary of the content
+            </mat-panel-description> -->
+        </mat-expansion-panel-header>
+        <div class="text-background">
+            <li class="text-formatation">
+                <b>Angular & Delphi:</b> O framkework e a linguágem em questão, foram aprendidos e desenvolvidas em conjunto, durante o <b>estágio</b> na empresa <b>Simples Informatica e Consultoria LTDA</b>. Durante 9 meses foram gerados conhecimentos necessários para formação profissional como <b>Full-Stack</b> com tais ferramentas, além de algumas soft skills. Nesse estágio tinha como responsabilidades: <b>a criação de telas</b>, <b>refatoração de códigos</b>, <b>análise de requisitos</b> e <b>criação de novos serviços</b>.
+            </li>
+        </div>
+    </mat-expansion-panel>
+</div>
