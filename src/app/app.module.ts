@@ -10,10 +10,11 @@ import { DataProfileComponent } from './data-profile/data-profile.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { AcademicRecordComponent } from './academic-record/academic-record.component';
 import { TechnicalKnowledgeComponent } from './technical-knowledge/technical-knowledge.component';
+import { InfoContatoComponent } from './info-contato/info-contato.component';
 
 @NgModule({
   declarations: [	
-    AppComponent, DataProfileComponent, MenuBarComponent, AcademicRecordComponent, TechnicalKnowledgeComponent,
+    AppComponent, DataProfileComponent, MenuBarComponent, AcademicRecordComponent, TechnicalKnowledgeComponent, InfoContatoComponent,
    ],
   imports: [
     BrowserModule,
