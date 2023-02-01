@@ -6,6 +6,7 @@
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
+    background-color: var(--primary-color);
     
 }
 
@@ -20,8 +21,8 @@
     height: auto;
     max-width: 16%;
     border-radius: 80%;
-    background-color: var(--primary-color);
-    box-shadow: 0 2px 8px rgb(35 32 10 / 40%);
+    background-color: white; /*var(--primary-color)*/
+    box-shadow: 0 1px 10px rgba(255, 255, 255, 0.623);
 }
 
 .aboutme{
@@ -37,13 +38,13 @@ button{
 }
 
 .myresume{
-    color: var(--primary-color);
+    color: white;
     font-size: 23px;
     font-weight: bold;
     border-radius: 20px;
     padding: 15px 25px 15px  25px;
     background-color: var(--second-color);
-    border-color: var(--primary-color)white;
+    border-color: var(--second-color);
 }
 
 .myresume:hover{
@@ -59,7 +60,7 @@ button{
     height: 60px;
     width: 60px;
     border-radius: 10px;
-    border-color: var(--primary-color);
+    border-color: var(--second-color);
 }
 
 
@@ -67,7 +68,7 @@ button{
 
     color: white;
     background-color: var(--second-color);
-    border-color: white;
+    border-color: var(--second-color);
 }
 
 

@@ -8,6 +8,7 @@
     justify-content: center;
     padding: 100px 200px 150px 200px;
     font-family: fangsong;
+    background-color: var(--primary-color);
 }
 
 .data-info {
@@ -19,7 +20,7 @@
 
 .text-formatation{
     font-size: 23px;
-    padding: 10px 100px 10px 100px;
+    padding: 10px 50px 10px 50px;
 }
 
 
@@ -28,9 +29,9 @@ b{
 }
 
 .text-background{
-    padding: 20px;
+    padding: 15px;
     border-radius: 2%;
     border-width: 30px;
-    background-color: rgba(66, 66, 66, 0.048);
+    background-color: rgba(255, 255, 255, 0.048);
     box-shadow: 0 2px 8px rgb(35 32 10 / 40%);
 }

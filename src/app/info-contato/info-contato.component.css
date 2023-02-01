@@ -1,1 +1,11 @@
 @import "../academic-record/academic-record.component.css";
+
+
+a{
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: var(--second-color)
+}

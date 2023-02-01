@@ -7,7 +7,8 @@
         [expanded]="controllerHardSkills" 
         (opened)="closeSoftSkills()"
         (closed)="openSoftSkills()"
-    >   
+        style="background-color: rgba(255, 255, 255, 0.74)"
+        >   
         <mat-expansion-panel-header >
           <mat-panel-title style="flex-grow: 4; height: 50px;">
             <div class="text-formatation" style="font-size: 30px;"> <b>Hard Skills: </b></div>
@@ -16,6 +17,7 @@
             This is a summary of the content
           </mat-panel-description> -->
         </mat-expansion-panel-header>
+        <br>
         <div class="text-background">
             <li class="text-formatation">
                 <b>Python:</b> Primeira linguágem aprendia. Aplicada em projetos web de forma simples com Django, mas conhecimentos mais aprofundados com <b>Web Scraping</b> e <b>Data Science</b>, utilizando de bibliotecas como <b>pandas</b>, <b>matplotlib</b>, <b>beautifulsoup</b>, <b>numpy</b>, etc...Com alguns certificações apresentaveis:
@@ -51,6 +53,7 @@
     <mat-expansion-panel showToggle [expanded]="controllerSoftSkills" 
         (opened)="openSoftSkills()"
         (closed)="closeSoftSkills()" 
+        style="background-color: rgba(255, 255, 255, 0.74)"
     >
         <mat-expansion-panel-header >
             <mat-panel-title style="flex-grow: 4;">
@@ -60,6 +63,7 @@
             This is a summary of the content
             </mat-panel-description> -->
         </mat-expansion-panel-header>
+        <br>
         <div class="text-background">
             <div class="text-formatation">
                 Algumas dessas habilidades foram desenvolvidas duantes minha formação social, como: 

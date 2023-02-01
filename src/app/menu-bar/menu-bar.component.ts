@@ -1,3 +1,4 @@
+import { IsDarkThemeService } from './../services/is-dark-theme.service';
 import { ChoiceDataOptionService } from './../services/choice-data-option.service';
 import { Component } from '@angular/core';
 @Component({
@@ -13,6 +14,9 @@ export class MenuBarComponent {
     this.choice = value;
   }
 
-  constructor(public choiceDataOptionService : ChoiceDataOptionService){}
+  constructor(
+    public choiceDataOptionService : ChoiceDataOptionService,
+    public isDarkThemeService: IsDarkThemeService
+  ){}
 
 }
