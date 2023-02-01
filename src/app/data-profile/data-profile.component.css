@@ -1,41 +1,141 @@
+@media only screen and (min-width: 1249px ) {
+    .workinformation{
+        display: flex;
+        padding: 10% 5% 10% 15%;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        
+    }
 
+    .datainfo-text {
+        display: flex;
+        width: -webkit-fill-available;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 
-.workinformation{
-    display: flex;
-    align-content: space-between;
-    padding: 10px 200px 10px 200px;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    background-color: var(--primary-color);
-    
+    .aboutme{
+        font-family: fangsong;
+        padding: 100px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .sized-box{
+        width: 650px;
+    }
+
+    .profileimage {
+        height: auto;
+        max-width: 20%;
+        border-radius: 80%;
+        box-shadow: 0 1px 10px rgba(255, 255, 255, 0.623);
+    }
+
+}
+
+@media only screen and (min-width: 900px ) and (max-width: 1249px ){
+    .workinformation{
+        display: flex;
+        width: -webkit-fill-available;
+        height: auto;
+        padding: 15%;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        
+    }
+
+    .datainfo-text {
+        display: flex;
+        width: -webkit-fill-available;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutme{
+        font-family: fangsong;
+        text-align: center;
+        padding: 10%;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .sized-box{
+        width: 40px;
+    }
+
+    .profileimage {
+        height: auto;
+        max-width: 30%;
+        border-radius: 80%;
+        box-shadow: 0 1px 10px rgba(255, 255, 255, 0.623);
+    }
+
+}
+
+@media only screen  and (max-width: 900px ){
+    .workinformation{
+        display: flex;
+        width: -webkit-fill-available;
+        height: auto;
+        padding: 15%;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        
+    }
+
+    .datainfo-text {
+        display: flex;
+        width: -webkit-fill-available;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutme{
+        font-family: fangsong;
+        text-align: center;
+        padding: 10%;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .sized-box{
+        width: 40px;
+    }
+
+    .profileimage {
+        height: auto;
+        max-width: 160px;
+        border-radius: 80%;
+        box-shadow: 0 1px 10px rgba(255, 255, 255, 0.623);
+    }
+
 }
 
 .datainfo {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.profileimage {
+    width: -webkit-fill-available;
     height: auto;
-    max-width: 25%;
-    border-radius: 80%;
-    box-shadow: 0 1px 10px rgba(255, 255, 255, 0.623);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.aboutme{
-    font-family: fangsong;
-    padding: 100px;
-    font-size: 24px;
-    font-weight: bold;
-}
 
-button{
-    outline: none;
-    transition: all 0.2s linear;
-}
+
+
 
 .myresume{
     color: white;
@@ -52,7 +152,6 @@ button{
     background-color: white;
     border-color: var(--second-color);
 }
-
 
 .socialmedia{
     color: var(--second-color);
@@ -72,10 +171,9 @@ button{
 }
 
 
-
-
-.sizedbox{
-    width: 650px;
+button{
+    outline: none;
+    transition: all 0.2s linear;
 }
 
 b{

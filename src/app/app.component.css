@@ -3,13 +3,9 @@
 .workpage{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: flex-start;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
     background-color: var(--primary-color);
     color: white;
 }

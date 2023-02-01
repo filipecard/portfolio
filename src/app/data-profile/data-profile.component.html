@@ -1,16 +1,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<br *ngFor="let item of [1,2,3,4,5,6,7,8]">
+<!-- <br *ngFor="let item of [1,2,3,4,5,6,7,8]"> -->
 
 <div class="workinformation">
 
-    <div class="datainfo">
-        <img class="profileimage" src="https://avatars.githubusercontent.com/u/49026995?v=4" alt="Avatar">
+    <div class="datainfo-text">
+        <img class="profileimage" src="https://avatars.githubusercontent.com/u/49026995?v=4" alt="Avatar" >
         <div class="aboutme">
             <p>Olá, tudo bom? Me chamo</p>
             <p style="color: var(--second-color);">FILIPE CARDOSO</p>
             <br>
-            <p style="font-size: 20px; width: 600px; height: auto;"> Sou um <b> Full-Stack Developer</b> e um <b > Game Developer</b>. Apaixonado pela área de programação, estou sempre buscando conhecer mais e mais. </p>
+            <p style="font-size: 20px;"> Sou um <b> Full-Stack Developer</b> e um <b > Game Developer</b>. Apaixonado pela área de programação, estou sempre buscando conhecer mais e mais. </p>
         </div>
     </div>
     <br><br>
@@ -19,15 +19,13 @@
             <button type="submit" class="myresume">Currículo</button>
         </a>
 
-        <div class="sizedbox"></div>
+        <div class="sized-box"></div>
 
         <a (click)="redirectMyGithub()">
             <button type="submit" class="socialmedia">
                 <i class="fa fa-github" style="font-size:40px"></i>
             </button>
         </a>
-
-        <div class="sizedbox" style="width: 20px;"></div>
         
         <a (click)="redirectMyInstagran()">
             <button type="submit" class="socialmedia">
