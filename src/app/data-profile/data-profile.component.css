@@ -3,6 +3,7 @@
 .workinformation{
     display: flex;
     align-content: space-between;
+    padding: 10px 200px 10px 200px;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -19,9 +20,8 @@
 
 .profileimage {
     height: auto;
-    max-width: 16%;
+    max-width: 25%;
     border-radius: 80%;
-    background-color: white; /*var(--primary-color)*/
     box-shadow: 0 1px 10px rgba(255, 255, 255, 0.623);
 }
 
