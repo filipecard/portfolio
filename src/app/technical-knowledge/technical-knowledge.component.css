@@ -1,6 +1,46 @@
 @import "../academic-record/academic-record.component.css";
 
-.list-certifications{
-    padding: 0px 0 0 100px;
-    font-size: 22px;
+
+
+@media only screen and (min-width: 1249px ) {
+    .list-certifications{
+        padding: 0px 0 0 100px;
+        font-size: 22px;
+    }
+
+    .text-formatation {
+        font-size: 22px;
+        padding: 10px 40px 10px 40px;
+    }
+}
+
+@media only screen and (min-width: 900px ) and (max-width: 1249px ){
+    .list-certifications{
+        padding: 0px 0 0 60px;
+        font-size: 19px;
+    }
+
+    .text-formatation {
+        font-size: 19px;
+        padding: 10px 20px 10px 20px;
+    }
+
+}
+
+@media only screen  and (max-width: 900px ){
+    .list-certifications{
+        padding: 0px 0 0 60px;
+        font-size: 18px;
+    }
+
+    .text-formatation {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+}
+
+
+.mat-expansion-panel-header{
+    background-color:rgba(255, 255, 255, 0.048)
 }
