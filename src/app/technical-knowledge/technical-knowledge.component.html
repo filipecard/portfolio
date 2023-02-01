@@ -5,8 +5,7 @@
     <p></p>
     <mat-expansion-panel showToggle 
         [expanded]="controllerHardSkills" 
-        (opened)="closeSoftSkills()"
-        (closed)="openSoftSkills()"
+        (opened)="this.controllerHardSkills= true; closeSoftSkills()"
         style="background-color: rgba(26, 26, 37, 0.753); color: white;"
         >   
         <mat-expansion-panel-header class="mat-expansion-panel-header">
@@ -51,8 +50,7 @@
     <br>
 
     <mat-expansion-panel showToggle [expanded]="controllerSoftSkills" 
-        (opened)="openSoftSkills()"
-        (closed)="closeSoftSkills()" 
+        (opened)="this.controllerSoftSkills = true;closeHardSkills()"
         style="background-color: rgba(26, 26, 37, 0.753); color: white;"
         >
         <mat-expansion-panel-header class="mat-expansion-panel-header">

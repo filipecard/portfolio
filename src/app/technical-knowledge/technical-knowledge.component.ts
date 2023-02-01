@@ -17,11 +17,9 @@ export class TechnicalKnowledgeComponent {
   }
 
   closeSoftSkills(){
-    this.controllerHardSkills = true;
     this.controllerSoftSkills = false;
   }
-  openSoftSkills(){
+  closeHardSkills(){
     this.controllerHardSkills = false;
-    this.controllerSoftSkills = true;
   }
 }

@@ -11,6 +11,7 @@
     .text-formatation {
         font-size: 22px;
         padding: 10px 40px 10px 40px;
+        max-width: 1450px
     }
 }
 
@@ -44,3 +45,4 @@
 .mat-expansion-panel-header{
     background-color:rgba(255, 255, 255, 0.048)
 }
+
