@@ -2,7 +2,7 @@
 
 
 a{
-    color: white;
+    color:  var(--dark-primary-color);
 }
 
 a:hover{
@@ -34,7 +34,7 @@ a:hover{
     }
 
     .text-formatation{
-        
+
         font-size: 20px;
     }
 }

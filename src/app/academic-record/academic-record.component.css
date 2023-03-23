@@ -1,7 +1,7 @@
 
 @media only screen and (min-width: 1249px ) {
     .work-information{
-        display: flex; 
+        display: flex;
         height: auto;
         align-items: center;
         flex-wrap: nowrap;
@@ -22,6 +22,7 @@
     .text-formatation{
         font-size: 23px;
         padding: 10px 50px 10px 50px;
+        color: var(--dark-primary-color);
     }
 
     .text-formatation-title{
@@ -43,7 +44,7 @@
 
 @media only screen and (min-width: 900px ) and (max-width: 1249px ){
     .work-information{
-        display: flex; 
+        display: flex;
         height: auto;
         align-items: center;
         flex-wrap: nowrap;
@@ -64,6 +65,7 @@
     .text-formatation{
         font-size: 20px;
         padding: 10px 50px 10px 50px;
+        color: var(--dark-primary-color);
     }
 
     .text-formatation-title{
@@ -85,7 +87,7 @@
 
 @media only screen  and (max-width: 900px ){
     .work-information{
-        display: flex; 
+        display: flex;
         height: auto;
         align-items: center;
         flex-wrap: nowrap;
@@ -106,6 +108,7 @@
     .text-formatation{
         font-size: 17px;
         padding: 10px 50px 10px 50px;
+        color: var(--dark-primary-color);
     }
 
     .text-formatation-title{
