@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class DataProfileComponent {
 
   redirectMyResume(){
-    window.open("https://drive.google.com/file/d/1z7U5NCXrN_frOULOeKuX-gR99xVLE0gN/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1I0HxqlX-AuECO7sXzYYxlVEcEbq6qTDl/view?usp=sharing", "_blank");
   }
 
   redirectMyGithub(){
