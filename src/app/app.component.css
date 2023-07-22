@@ -1,33 +1,66 @@
-@media only screen and (min-width: 900px ) {
-    .workpage{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        height: -webkit-fill-available;
-        width: -webkit-fill-available;
-        background-color: var(--primary-color);
-        color: white;
+@media only screen and (min-width: 900px) {
+  .workpage-day {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100vh;
+    width: -webkit-fill-available;
 
-        }
+    background: linear-gradient(120deg, #001221, #0073df, #ffffff);
 
-    
-    
+    background-size: 900% 200%;
+    animation: timelapse-day 5s ease 1 forwards;
+
+  }
+
+  .workpage-night {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100vh;
+    width: -webkit-fill-available;
+
+    background: linear-gradient(120deg, #001221, #0073df, #ffffff);
+
+    background-size: 900% 200%;
+    animation: timelapse-night 5s ease 1 forwards;
+
+  }
 }
 
-@media only screen  and (max-width: 900px ){
-    .workpage{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        height: -webkit-fill-available;
-        width: -webkit-fill-available;
-        background-color: var(--primary-color);
-        color: white;
+@media only screen and (max-width: 900px) {
+  .workpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    background-color: var(--primary-color);
+    color: white;
 
-        }
+  }
 
-    
+
 }
 
 
+@keyframes timelapse-day {
+  0% {
+    background-position: 0% 50%;
+  }
 
+  100% {
+    background-position: 100% 50%;
+  }
+
+}
+
+
+@keyframes timelapse-night {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
