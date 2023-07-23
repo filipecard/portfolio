@@ -1,7 +1,7 @@
-@media only screen and (min-width: 1249px ) {
+@media only screen and (min-width: 900px ) {
     .workinformation{
         display: flex;
-        padding: 10% 5% 10% 15%;
+        padding: 10% 5% 0 15%;
         align-items: center;
         flex-wrap: nowrap;
         flex-direction: column;
@@ -12,7 +12,7 @@
     .datainfo-text {
         display: flex;
         width: -webkit-fill-available;
-        height: auto;
+        height: 100%;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -38,66 +38,19 @@
 
 }
 
-@media only screen and (min-width: 900px ) and (max-width: 1249px ){
-    .workinformation{
-        display: flex;
-        width: -webkit-fill-available;
-        height: auto;
-        padding: 15%;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        background-color: var(--primary-color);
-
-    }
-
-    .datainfo-text {
-        display: flex;
-        width: -webkit-fill-available;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .aboutme{
-        font-family: fangsong;
-        text-align: center;
-        padding: 10%;
-        font-size: 24px;
-        font-weight: bold;
-    }
-
-    .sized-box{
-        width: 40px;
-    }
-
-    .profileimage {
-        height: auto;
-        max-width: 30%;
-        border-radius: 80%;
-        box-shadow: 0 1px 10px rgba(7, 7, 7, 0.623);
-    }
-
-}
-
 @media only screen  and (max-width: 900px ){
     .workinformation{
         display: flex;
-        width: -webkit-fill-available;
-        height: auto;
-        padding: 15%;
         align-items: center;
         flex-wrap: nowrap;
         flex-direction: column;
-        background-color: var(--primary-color);
 
     }
 
     .datainfo-text {
         display: flex;
         width: -webkit-fill-available;
-        height: auto;
+        padding: 0 10% 0 10%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -106,7 +59,6 @@
     .aboutme{
         font-family: fangsong;
         text-align: center;
-        padding: 10%;
         font-size: 24px;
         font-weight: bold;
     }
@@ -124,10 +76,10 @@
 
 }
 
-.datainfo {
+.div-socialmedia-buttons {
     display: flex;
     width: -webkit-fill-available;
-    height: auto;
+    padding: 0 10% 0 10%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -166,7 +118,7 @@
 .socialmedia:hover{
 
     color: var(--dark-primary-color);
-    background-color: var(--second-color);
+    /* background-color: var(--second-color); */
     border-color: var(--second-color);
 }
 

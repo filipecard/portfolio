@@ -8,11 +8,9 @@ body {
     --second-color: #0088e2;
     --dark-primary-color:#0e0e0f;
     --dark-second-color:#007acc;
+    height:-webkit-fill-available;
     margin: 0;
     font-family: "Fira Code";
-    background-color: var(--primary-color);
+    /* background-color: colorR; */
 }
 
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

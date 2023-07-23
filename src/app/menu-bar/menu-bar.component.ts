@@ -1,4 +1,4 @@
-import { IsDarkThemeService } from './../services/is-dark-theme.service';
+import { ThemeService } from '../services/theme.service';
 import { ChoiceDataOptionService } from './../services/choice-data-option.service';
 import { Component } from '@angular/core';
 @Component({
@@ -16,7 +16,7 @@ export class MenuBarComponent {
 
   constructor(
     public choiceDataOptionService : ChoiceDataOptionService,
-    public isDarkThemeService: IsDarkThemeService
+    public ThemeService: ThemeService
   ){}
 
 }

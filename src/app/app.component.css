@@ -1,58 +1,73 @@
 @media only screen and (min-width: 900px) {
-  .workpage {
+  .orientation-menu-theme-button {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    height: 100vh;
-    width: -webkit-fill-available;
-    background: linear-gradient(120deg, #001221, #0073df, #ffffff);
-    background-size: 900% 200%;
-    background-position: 100% 50%;
   }
-
-  .workpage-day {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    height: 100vh;
-    width: -webkit-fill-available;
-
-    background: linear-gradient(120deg, #001221, #0073df, #ffffff);
-
-    background-size: 900% 200%;
-    animation: timelapse-day 1s ease 1 forwards;
-
-  }
-
-  .workpage-night {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    height: 100vh;
-    width: -webkit-fill-available;
-
-    background: linear-gradient(120deg, #01010e, #18293a, #ffffff);
-
-    background-size: 900% 200%;
-    animation: timelapse-night 1s ease 1 forwards;
-
-  }
-
 
 }
 
 @media only screen and (max-width: 900px) {
-  .workpage {
+  .orientation-menu-theme-button {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-    background-color: var(--primary-color);
-    color: white;
-
+    width: 100%;
   }
 }
 
+.workpage {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100%;
+  width: -webkit-fill-available;
+  background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 16%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 30%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
+  background-size: 900% 200%;
+  background-position: 55% 40%;
+  /* background-position: 0% 0%; night */
+  /* background-position: 20% 20%; sunset */
+}
+
+.workpage-day {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100vh;
+  width: -webkit-fill-available;
+
+  background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 16%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 30%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
+
+  background-size: 900% 400%;
+  animation: timelapse-day 1s ease 1 forwards;
+
+}
+
+.workpage-sunset {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100vh;
+  width: -webkit-fill-available;
+
+  background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 16%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 30%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
+
+  background-size: 600% 200%;
+  animation: timelapse-sunset 1s ease 1 forwards;
+
+}
+
+.workpage-night {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100vh;
+  width: -webkit-fill-available;
+
+  background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 16%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 30%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
+
+  background-size: 1200% 200%;
+  animation: timelapse-night 1s ease 1 forwards;
+
+}
 
 .div-theme-button {
   padding: 1%;
@@ -63,24 +78,37 @@
 
 
 
+/* background-position: 0% 0%; night */
+/* background-position: 20% 20%; sunset */
+
 @keyframes timelapse-day {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 55%;
   }
 
   100% {
-    background-position: 100% 50%;
+    background-position: 55% 40%;
   }
 
 }
 
-
-@keyframes timelapse-night {
+@keyframes timelapse-sunset {
   0% {
-    background-position: 100% 50%;
+    background-position: 55% 40%;
   }
 
   100% {
-    background-position: 0% 50%;
+    background-position: 20% 5%;
+  }
+
+}
+
+@keyframes timelapse-night {
+  0% {
+    background-position: 20% 5%;
+  }
+
+  100% {
+    background-position: 0% 0%;
   }
 }

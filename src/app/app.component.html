@@ -9,22 +9,31 @@
 
 
 <div class="workpage" id="maindiv">
-  <app-menu-bar></app-menu-bar>
-  <div class="data-container">
+  <div class="orientation-menu-theme-button">
+    <app-menu-bar> </app-menu-bar>
     <div class="div-theme-button">
-      <button *ngIf="!this.themeService.isDark" mat-fab style="background-color: #ffffff; color: #00062a;"
+      <button *ngIf="this.themeService.getTheme() === 'day'" mat-fab style="background-color: #ffffff; color: #00062a;"
         (click)="runAnimation()">
         <span class="material-symbols-outlined">{{themeName[1]}}</span>
       </button>
-      <button *ngIf="this.themeService.isDark" mat-fab style="background-color: #00062a;" (click)="runAnimation()">
+      <button *ngIf="this.themeService.getTheme() === 'sunset'" mat-fab
+        style="background-color: #a03b00; color: #ffffff;" (click)="runAnimation()">
+        <span class="material-symbols-outlined">{{themeName[2]}}</span>
+      </button>
+      <button *ngIf="this.themeService.getTheme() === 'night'" mat-fab style="background-color: #444861;"
+        (click)="runAnimation()">
         <span class="material-symbols-outlined">{{themeName[0]}}</span>
       </button>
-
     </div>
 
-    <app-data-profile *ngIf="choiceDataOptionService.choice[0]"></app-data-profile>
-    <app-academic-record *ngIf="choiceDataOptionService.choice[1]"></app-academic-record>
-    <app-technical-knowledge *ngIf="choiceDataOptionService.choice[2]"></app-technical-knowledge>
-    <app-info-contato *ngIf="choiceDataOptionService.choice[3]"></app-info-contato>
+    <div class="data-container">
+
+      <app-data-profile *ngIf="choiceDataOptionService.choice[0]"></app-data-profile>
+      <!-- <app-academic-record *ngIf="choiceDataOptionService.choice[1]"></app-academic-record> -->
+      <!-- <app-technical-knowledge *ngIf="choiceDataOptionService.choice[2]"></app-technical-knowledge> -->
+      <!-- <app-info-contato *ngIf="choiceDataOptionService.choice[3]"></app-info-contato> -->
+    </div>
+
   </div>
+  <br><br>
 </div>

@@ -1,11 +1,11 @@
 
 @media only screen and (min-width: 900px ) {
-    .appbar{
+    .menu-bar{
       display: flex;
       flex-direction: column;
       width: 100px;
-      height: -webkit-fill-available;
-      background-color: var(--second-color);
+      height: 100%;
+      background-color: rgba(0, 58, 48, 0.747);
       flex-wrap: nowrap;
       align-items: center;
       justify-content: space-evenly;
@@ -14,7 +14,7 @@
 
 
 @media only screen  and (max-width: 900px ){
-    .appbar{
+    .menu-bar{
         display: flex;
         flex-direction: row;
         width: -webkit-fill-available;
