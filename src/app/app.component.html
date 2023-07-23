@@ -10,19 +10,19 @@
 
 <div class="workpage" id="maindiv">
   <div class="orientation-menu-theme-button">
-    <app-menu-bar> </app-menu-bar>
+    <app-menu-bar></app-menu-bar>
     <div class="div-theme-button">
-      <button *ngIf="this.themeService.getTheme() === 'day'" mat-fab style="background-color: #ffffff; color: #00062a;"
+      <button class="button day-theme" *ngIf="this.themeService.getTheme() === 'day'" mat-fab
+        (click)="runAnimation()">
+        <span class="material-symbols-outlined">{{themeName[0]}}</span>
+      </button>
+      <button class="button sunset-theme" *ngIf="this.themeService.getTheme() === 'sunset'" mat-fab
         (click)="runAnimation()">
         <span class="material-symbols-outlined">{{themeName[1]}}</span>
       </button>
-      <button *ngIf="this.themeService.getTheme() === 'sunset'" mat-fab
-        style="background-color: #a03b00; color: #ffffff;" (click)="runAnimation()">
-        <span class="material-symbols-outlined">{{themeName[2]}}</span>
-      </button>
-      <button *ngIf="this.themeService.getTheme() === 'night'" mat-fab style="background-color: #444861;"
+      <button class="button night-theme" *ngIf="this.themeService.getTheme() === 'night'" mat-fab
         (click)="runAnimation()">
-        <span class="material-symbols-outlined">{{themeName[0]}}</span>
+        <span class="material-symbols-outlined">{{themeName[2]}}</span>
       </button>
     </div>
 

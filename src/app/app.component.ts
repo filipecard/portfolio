@@ -16,7 +16,7 @@ export class AppComponent {
     public themeService: ThemeService
     ) {}
 
-  public themeName = ['dark_mode', 'light_mode', 'wb_twilight']
+  public themeName = ['light_mode', 'wb_twilight', 'dark_mode']
 
   public runAnimation() {
     this.themeService.nextPeriod();

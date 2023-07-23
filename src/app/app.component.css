@@ -20,7 +20,7 @@
   justify-content: flex-start;
   height: 100%;
   width: -webkit-fill-available;
-  background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 16%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 30%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
+  background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 14%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 33%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
   background-size: 900% 200%;
   background-position: 55% 40%;
   /* background-position: 0% 0%; night */
@@ -34,7 +34,7 @@
   height: 100vh;
   width: -webkit-fill-available;
 
-  background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 16%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 30%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
+  background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 14%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 33%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
 
   background-size: 900% 400%;
   animation: timelapse-day 1s ease 1 forwards;
@@ -48,7 +48,7 @@
   height: 100vh;
   width: -webkit-fill-available;
 
-  background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 16%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 30%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
+  background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 14%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 33%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
 
   background-size: 600% 200%;
   animation: timelapse-sunset 1s ease 1 forwards;
@@ -62,7 +62,7 @@
   height: 100vh;
   width: -webkit-fill-available;
 
-  background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 16%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 30%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
+  background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 14%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 33%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
 
   background-size: 1200% 200%;
   animation: timelapse-night 1s ease 1 forwards;
@@ -76,14 +76,21 @@
   justify-content: flex-end;
 }
 
+.button.sunset-theme{
+  background-color: #a03b00;
+}
 
+.button.day-theme{
+  background-color: #ffffff; color: #00062a;
+}
 
-/* background-position: 0% 0%; night */
-/* background-position: 20% 20%; sunset */
+.button.night-theme{
+  background-color: #444861;
+}
 
 @keyframes timelapse-day {
   0% {
-    background-position: 0% 55%;
+    background-position: 0% 0%;
   }
 
   100% {
@@ -98,14 +105,14 @@
   }
 
   100% {
-    background-position: 20% 5%;
+    background-position: 20% 30%;
   }
 
 }
 
 @keyframes timelapse-night {
   0% {
-    background-position: 20% 5%;
+    background-position: 20% 30%;
   }
 
   100% {

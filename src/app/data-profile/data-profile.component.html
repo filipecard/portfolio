@@ -7,30 +7,32 @@
   <div class="datainfo-text">
     <img class="profileimage" src="https://avatars.githubusercontent.com/u/49026995?v=4" alt="Avatar">
     <div class="aboutme">
-      <p>Olá, eu sou</p>
+      <p>Olá, meu nome é </p>
       <p style="color: var(--second-color);">FILIPE CARDOSO</p>
       <br>
-      <p style="font-size: 20px; color: var(--dark-primary-color);"> Sou um <b> Full-Stack Developer</b> e um <b> Game
-          Developer</b>. Apaixonado pela área de programação, estou sempre buscando conhecer mais e mais. </p>
+      <p style="font-size: 20px; color: var(--dark-primary-color);"> Tenho {{getAge()}} anos e sou <b> Full-Stack Developer</b>, apaixonado pela área de programação, designer e jogos. </p>
     </div>
   </div>
   <br><br>
   <div class="div-socialmedia-buttons">
     <a (click)="redirectMyResume()">
-      <button type="submit" class="myresume">Currículo</button>
+      <button type="submit" class="button button-resume" mat-raised-button>Currículo</button>
     </a>
 
     <div class="sized-box"></div>
 
     <a (click)="redirectMyGithub()">
-      <button type="submit" class="socialmedia">
-        <i class="fa fa-github" style="font-size:40px"></i>
+      <!-- <button type="submit" class="button button-social-media" mat-fab >
+        <i class="fa fa-github"></i>
+      </button> -->
+      <button mat-fab class="button button-social-media">
+        <i class="fa fa-github icon-social-media"></i>
       </button>
     </a>
 
     <a (click)="redirectMyInstagran()">
-      <button type="submit" class="socialmedia">
-        <i class="fa fa-instagram" style="font-size:40px"></i>
+      <button mat-fab class="button button-social-media">
+        <i class="fa fa-instagram icon-social-media"></i>
       </button>
     </a>
   </div>

@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class DataProfileComponent {
 
+  getAge(): number{
+    const dateNasc = new Date('January 21, 2000').getFullYear();
+    const dateNow = new Date().getFullYear();
+    return dateNow - dateNasc;
+  }
+
   redirectMyResume(){
     window.open("https://drive.google.com/file/d/1I0HxqlX-AuECO7sXzYYxlVEcEbq6qTDl/view?usp=sharing", "_blank");
   }
