@@ -1,14 +1,14 @@
 
 @media only screen and (min-width: 900px ) {
     .appbar{
-        display: flex;
-        flex-direction: column;
-        width: 100px;
-        height: -webkit-fill-available;
-        background-color: var(--second-color);
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+      height: -webkit-fill-available;
+      background-color: var(--second-color);
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-evenly;
     }
 }
 
@@ -23,7 +23,7 @@
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-evenly;
-    
+
     }
 }
 
@@ -35,7 +35,7 @@ button{
 }
 
 .select-options{
-    color: var(--second-color); 
+    color: var(--second-color);
     height: 60px;
     width: 60px;
     background: white;
@@ -50,5 +50,7 @@ button{
     width: 70px;
     font-size:45px;
 
-}   
+}
+
+
 

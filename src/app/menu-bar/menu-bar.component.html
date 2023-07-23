@@ -1,20 +1,25 @@
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <div class="appbar">
-    <button class="select-options" (click)="choiceDataOptionService.setChoiceOption(0)">
-        <span class="glyphicon glyphicon-user"></span>
-    </button><br><br><br>
+  <button type="button" mat-fab (click)="choiceDataOptionService.setChoiceOption(0)">
+    <span class="material-symbols-outlined"> home </span>
+  </button>
 
-    <button class="select-options" (click)="choiceDataOptionService.setChoiceOption(1)">
-        <span class="glyphicon glyphicon-education"></span>
-    </button><br><br><br>
+  <button type="button" mat-fab (click)="choiceDataOptionService.setChoiceOption(1)">
+       <span class="material-symbols-outlined">
+      book
+      </span>
+  </button>
 
-    <button class="select-options" (click)="choiceDataOptionService.setChoiceOption(2)">
-        <span class="glyphicon glyphicon-briefcase"></span>
-    </button><br><br><br>
-    
-    <button class="select-options" (click)="choiceDataOptionService.setChoiceOption(3)">
-        <span class="glyphicon glyphicon-envelope"></span></button>
+  <button type="button" mat-fab (click)="choiceDataOptionService.setChoiceOption(2)">
+    <span class="material-symbols-outlined"> feed </span>
+
+  </button>
+
+  <button type="button" mat-fab (click)="choiceDataOptionService.setChoiceOption(3)">
+    <span class="material-symbols-outlined">
+      call
+      </span>
+  </button>
+
 </div>
-

@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 
 export class MenuBarComponent {
   public choice: number = 0;
-  
+
   set_choice(value:number){
     this.choice = value;
   }

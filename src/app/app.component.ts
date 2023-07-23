@@ -1,6 +1,7 @@
 import { ChoiceDataOptionService } from './services/choice-data-option.service';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { Component } from '@angular/core';
+import { IsDarkThemeService } from './services/is-dark-theme.service';
 
 
 
@@ -11,17 +12,17 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  constructor(public choiceDataOptionService: ChoiceDataOptionService) {
+  constructor(
+    public choiceDataOptionService: ChoiceDataOptionService,
+    public themeService: IsDarkThemeService
+    ) {}
 
-  }
-
-  public darkMode: boolean = false;
   public themeName = ['dark_mode', 'light_mode']
 
   public runAnimation() {
-    this.darkMode = !this.darkMode;
+    this.themeService.switchTheme();
     var div = document.getElementById('maindiv');
-    if (div) this.darkMode ? div.className = 'workpage-night' : div.className = 'workpage-day';
+    if (div) this.themeService.isDark ?  div.className = 'workpage-day' : div.className = 'workpage-night';
   }
 }
 
