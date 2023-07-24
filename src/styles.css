@@ -2,13 +2,12 @@
 
 html, body { height: 100%; }
 body {
-    /* --primary-color: rgb(248, 251, 255);
-    --second-color: orangered; */
+
     --primary-color: #fcfcfc;
     --second-color: #0088e2;
     --dark-primary-color:#0e0e0f;
     --dark-second-color:#226897;
-    height:-webkit-fill-available;
+    height: 100%;
     margin: 0;
     font-family: "Fira Code";
     /* background-color: colorR; */

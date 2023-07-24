@@ -1,12 +1,10 @@
 @media only screen and (min-width: 900px) {
   .workinformation {
     display: flex;
-    padding: 10% 5% 0 15%;
+    padding: 10% 5% 0% 10%;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
-    /* background-color: var(--primary-color); */
-
   }
 
   .datainfo-text {
@@ -19,8 +17,8 @@
   }
 
   .aboutme {
+    width: 80%;
     font-family: fangsong;
-    padding: 100px;
     font-size: 24px;
     font-weight: bold;
   }
@@ -29,7 +27,7 @@
     width: 650px;
   }
 
-  .profileimage {
+  .profile-image {
     height: auto;
     max-width: 20%;
     border-radius: 80%;
@@ -50,30 +48,39 @@
   .datainfo-text {
     display: flex;
     width: -webkit-fill-available;
-    padding: 0 10% 0 10%;
+    padding:  2% 10% 0 10%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .aboutme {
-    font-family: fangsong;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
   }
 
   .sized-box {
     width: 40px;
   }
 
-  .profileimage {
+  .profile-image {
     height: auto;
-    max-width: 160px;
+    max-width: 130px;
     border-radius: 80%;
     box-shadow: 0 1px 10px rgba(7, 7, 7, 0.623);
   }
 
+  .aboutme {
+    width: 80%;
+    font-family: fangsong;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+
+
+.aboutme.light-theme {
+  animation: font-color-day 1s ease 1 forwards;
+}
+
+.aboutme.dark-theme{
+  animation: font-color-night 1s ease 1 forwards;
 }
 
 .div-socialmedia-buttons {
@@ -84,9 +91,6 @@
   align-items: center;
   justify-content: center;
 }
-
-
-
 
 
 .button.button-resume {
@@ -113,17 +117,14 @@
   height: 60px;
   width: 60px;
 }
-.icon-social-media{
+
+.icon-social-media {
   transform: translateY(-11.5px);
 }
 
 
-
-
 .button.button-social-media:hover {
-
   color: var(--dark-primary-color);
-  /* background-color: var(--second-color); */
   border-color: var(--second-color);
 }
 
@@ -136,3 +137,25 @@ button {
 b {
   color: var(--second-color);
 }
+
+
+@keyframes font-color-night{
+  0%{
+    color: #0e0e0f;
+  }
+
+  100% {
+    color: rgb(255, 255, 255);
+  }
+}
+
+@keyframes font-color-day{
+  0%{
+    color: rgb(255, 255, 255);
+  }
+
+  100% {
+    color: #0e0e0f;
+  }
+}
+

@@ -1,32 +1,29 @@
 
 @media only screen and (min-width: 900px ) {
     .menu-bar{
-      display: flex;
       flex-direction: column;
       width: 100px;
       height: 100%;
-      background-color: rgba(0, 58, 48, 0.747);
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: space-evenly;
+      background-color: rgb(255 255 255 / 28%);
     }
 }
 
 
 @media only screen  and (max-width: 900px ){
     .menu-bar{
-        display: flex;
         flex-direction: row;
-        width: -webkit-fill-available;
-        height: 100px;
-        background-color: var(--second-color);
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-evenly;
-
+        height: 120%;
+        background-color: rgb(255 255 255 / 28%);
     }
 }
 
+.menu-bar{
+  display: flex;
+  background-color: rgb(255 255 255 / 28%);
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 
 button{
@@ -34,22 +31,15 @@ button{
     transition: all 0.1s linear;
 }
 
-.select-options{
-    color: var(--second-color);
-    height: 60px;
-    width: 60px;
-    background: white;
-    border-color: var(--second-color);
-    border-radius: 50%;
-    font-size:35px;
+.button.select-options{
+  color: #ffffff;
+  background: #00000040;
 }
 
 
-.select-options:hover {
-    height: 70px;
-    width: 70px;
-    font-size:45px;
-
+.button.select-options:hover {
+  color:white;
+  background: var(--second-color);
 }
 
 

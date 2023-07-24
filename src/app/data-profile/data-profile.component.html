@@ -5,35 +5,24 @@
 <div class="workinformation">
 
   <div class="datainfo-text">
-    <img class="profileimage" src="https://avatars.githubusercontent.com/u/49026995?v=4" alt="Avatar">
-    <div class="aboutme">
+    <br>
+    <img class="profile-image" src="https://avatars.githubusercontent.com/u/49026995?v=4" alt="Avatar">
+    <span style="opacity: 0;">espaço</span>
+    <div class="aboutme"
+      [ngClass]="{'dark-theme': this._themeService.getTheme() === 'night', 'light-theme': this._themeService.getTheme() !== 'night'}">
       <p>Olá, meu nome é </p>
-      <p style="color: var(--second-color);">FILIPE CARDOSO</p>
+      <p style="color: var(--second-color); ">FILIPE CARDOSO</p>
       <br>
-      <p style="font-size: 20px; color: var(--dark-primary-color);"> Tenho {{getAge()}} anos e sou <b> Full-Stack Developer</b>, apaixonado pela área de programação, designer e jogos. </p>
+      <p style="font-size: 20px;"> Tenho {{getAge()}} anos e sou <b> Full-Stack Developer</b>. Apaixonado pela área de
+        programação, designer e jogos. Aqui há algumas informações pessoais e profissionais, caso tenha interesse ou
+        dúvidas, me contate em alguma das redes sociais. </p>
     </div>
+    <span style="opacity: 0;">espaço espaço espaço espaço </span>
   </div>
-  <br><br>
   <div class="div-socialmedia-buttons">
     <a (click)="redirectMyResume()">
       <button type="submit" class="button button-resume" mat-raised-button>Currículo</button>
     </a>
-
     <div class="sized-box"></div>
-
-    <a (click)="redirectMyGithub()">
-      <!-- <button type="submit" class="button button-social-media" mat-fab >
-        <i class="fa fa-github"></i>
-      </button> -->
-      <button mat-fab class="button button-social-media">
-        <i class="fa fa-github icon-social-media"></i>
-      </button>
-    </a>
-
-    <a (click)="redirectMyInstagran()">
-      <button mat-fab class="button button-social-media">
-        <i class="fa fa-instagram icon-social-media"></i>
-      </button>
-    </a>
   </div>
 </div>

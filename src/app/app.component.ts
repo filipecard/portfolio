@@ -22,7 +22,6 @@ export class AppComponent {
     this.themeService.nextPeriod();
 
     var div = document.getElementById('maindiv');
-    console.log(this.themeService.getTheme())
 
     if (div) {
       switch (this.themeService.getTheme()) {

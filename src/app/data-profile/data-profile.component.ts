@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-data-profile',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./data-profile.component.css']
 })
 export class DataProfileComponent {
+
+  constructor(
+    public _themeService: ThemeService
+  ){}
 
   getAge(): number{
     const dateNasc = new Date('January 21, 2000').getFullYear();
@@ -17,11 +22,4 @@ export class DataProfileComponent {
     window.open("https://drive.google.com/file/d/1I0HxqlX-AuECO7sXzYYxlVEcEbq6qTDl/view?usp=sharing", "_blank");
   }
 
-  redirectMyGithub(){
-    window.open("https://github.com/filipecard", "_blank");
-  }
-
-  redirectMyInstagran(){
-    window.open("https://www.instagram.com/filipe_caroli/", "_blank");
-  }
 }

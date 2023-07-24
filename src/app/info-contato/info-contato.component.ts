@@ -20,6 +20,9 @@ export class InfoContatoComponent {
     window.open("https://github.com/filipecard", "_blank");
   }
 
+  redirectMyInstagran(){
+    window.open("https://www.instagram.com/filipe_caroli/", "_blank");
+  }
 
 }
 

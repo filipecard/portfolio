@@ -11,6 +11,14 @@
 <div class="workpage" id="maindiv">
   <div class="orientation-menu-theme-button">
     <app-menu-bar></app-menu-bar>
+    <div class="data-container">
+
+      <app-data-profile *ngIf="choiceDataOptionService.choice[0]"></app-data-profile>
+      <!-- <app-academic-record *ngIf="choiceDataOptionService.choice[1]"></app-academic-record> -->
+      <!-- <app-technical-knowledge *ngIf="choiceDataOptionService.choice[2]"></app-technical-knowledge> -->
+      <!-- <app-info-contato *ngIf="choiceDataOptionService.choice[3]"></app-info-contato> -->
+    </div>
+
     <div class="div-theme-button">
       <button class="button day-theme" *ngIf="this.themeService.getTheme() === 'day'" mat-fab
         (click)="runAnimation()">
@@ -24,14 +32,6 @@
         (click)="runAnimation()">
         <span class="material-symbols-outlined">{{themeName[2]}}</span>
       </button>
-    </div>
-
-    <div class="data-container">
-
-      <app-data-profile *ngIf="choiceDataOptionService.choice[0]"></app-data-profile>
-      <!-- <app-academic-record *ngIf="choiceDataOptionService.choice[1]"></app-academic-record> -->
-      <!-- <app-technical-knowledge *ngIf="choiceDataOptionService.choice[2]"></app-technical-knowledge> -->
-      <!-- <app-info-contato *ngIf="choiceDataOptionService.choice[3]"></app-info-contato> -->
     </div>
 
   </div>
