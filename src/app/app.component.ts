@@ -26,13 +26,13 @@ export class AppComponent {
     if (div) {
       switch (this.themeService.getTheme()) {
         case 'day':
-          div.className = 'workpage-day'
+          div.className = 'workpage workpage-day'
           break;
         case 'sunset':
-          div.className = 'workpage-sunset'
+          div.className = 'workpage workpage-sunset'
           break;
         case 'night':
-          div.className = 'workpage-night'
+          div.className = 'workpage workpage-night'
           break;
       }
     }
