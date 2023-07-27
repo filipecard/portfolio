@@ -2,7 +2,7 @@
 
 <!-- <br *ngFor="let item of [1,2,3,4,5,6,7,8]"> -->
 
-<div class="workinformation">
+<div class="work-information">
 
   <div class="datainfo-text">
     <br>
@@ -10,15 +10,16 @@
     <span style="opacity: 0;">espaço</span>
     <div class="aboutme"
       [ngClass]="{'dark-theme': this._themeService.getTheme() !== 'day', 'light-theme': this._themeService.getTheme() === 'day'}">
-      <p>Olá, meu nome é </p>
+      <p style="font-size: 23px;">Olá, meu nome é </p>
       <p style="color: var(--second-color); ">FILIPE CARDOSO</p>
       <br>
-      <p style="font-size: 22px;"> Tenho {{getAge()}} anos e sou <b> Full-Stack Developer</b>. Apaixonado pela área de
+      <p> Tenho {{getAge()}} anos e sou <b> Full-Stack Developer</b>. Apaixonado pela área de
         programação, designer e jogos. Aqui há algumas informações pessoais e profissionais, caso tenha interesse ou
         dúvidas, me contate em alguma das redes sociais. </p>
     </div>
     <span style="opacity: 0;">espaço espaço espaço espaço </span>
   </div>
+  <br>
   <div class="div-socialmedia-buttons">
     <a (click)="redirectMyResume()">
       <button type="submit" class="button button-resume" mat-raised-button>Currículo</button>

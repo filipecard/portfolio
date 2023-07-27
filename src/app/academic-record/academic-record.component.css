@@ -1,132 +1,114 @@
-
-@media only screen and (min-width: 1249px ) {
-    .work-information{
-        display: flex;
-        height: auto;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: center;
-        padding: 80px;
-        font-family: fangsong;
-        /* background-color: var(--primary-color); */
-    }
-
-    .data-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .text-formatation{
-        font-size: 23px;
-        padding: 10px 50px 10px 50px;
-        color: var(--dark-primary-color);
-    }
-
-    .text-formatation-title{
-        font-size: 26px;
-        padding: 10px 50px 10px 50px;
-    }
+@import "../data-profile/data-profile.component.css";
 
 
+@media only screen and (min-width: 1024px) {
 
-    .text-background{
-        padding: 15px;
-        border-radius: 2%;
-        border-width: 30px;
-        background-color: rgba(255, 255, 255, 0.048);
-        box-shadow: 0 2px 8px rgb(35 32 10 / 40%);
-    }
+  .text-formatation {
+    font-size: 23px;
+  }
+
+  .text-formatation.title {
+    font-size: 26px;
+  }
+
+
+  .text-background {
+    padding: 15px;
+    border-radius: 2%;
+    border-width: 30px;
+    background-color: rgba(255, 255, 255, 0.048);
+    box-shadow: 0 2px 8px rgb(35 32 10 / 40%);
+  }
 
 }
 
-@media only screen and (min-width: 900px ) and (max-width: 1249px ){
-    .work-information{
-        display: flex;
-        height: auto;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: center;
-        padding: 60px ;
-        font-family: fangsong;
-        background-color: var(--primary-color);
-    }
+@media only screen and (max-width: 1024px) {
 
-    .data-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .text-formatation {
+    font-size: 20px;
+  }
 
-    .text-formatation{
-        font-size: 20px;
-        padding: 10px 50px 10px 50px;
-        color: var(--dark-primary-color);
-    }
+  .text-formatation.title {
+    font-size: 20px;
+  }
 
-    .text-formatation-title{
-        font-size: 23px;
-        padding: 10px 50px 10px 50px;
-    }
+  .text-background {
+    display: block;
+    overflow-y: scroll;
+    height: 65vh;
+    padding: 15px;
+    border-radius: 2%;
+    border-width: 30px;
+    box-shadow: 0 2px 8px rgb(35 32 10 / 40%);
+  }
+}
+
+/* @media only screen and (max-width: 900px) {   fazer para telas de 1024 px
+
+  .text-formatation {
+    font-size: 20px;
+  }
+
+  .text-formatation.title {
+    font-size: 20px;
+  }
+
+  .text-background {
+    display: block;
+    overflow-y: scroll;
+    height: 65vh;
+    padding: 15px;
+    border-radius: 2%;
+    border-width: 30px;
+    box-shadow: 0 2px 8px rgb(35 32 10 / 40%);
+  }
+} */
 
 
-    .text-background{
-        padding: 15px;
-        border-radius: 2%;
-        border-width: 30px;
-        background-color: rgba(255, 255, 255, 0.048);
-        box-shadow: 0 2px 8px rgb(35 32 10 / 40%);
-    }
+.text-formatation {
+  font-size: 20px;
+  padding: 1% 5% 1% 5%;
+  color: var(--dark-primary-color);
+}
 
+.text-formatation.title {
+  font-size: 20px;
+  color: var(--dark-primary-color);
+  padding: 1% 5% 1% 5%;
 }
 
 
-@media only screen  and (max-width: 900px ){
-    .work-information{
-        display: flex;
-        height: auto;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: center;
-        padding:20px;
-        font-family: fangsong;
-        background-color: var(--primary-color);
-    }
+.text-formatation.light-theme {
+  animation: font-color-day 1s ease 1 forwards;
+}
 
-    .data-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.text-formatation.dark-theme {
+  animation: font-color-night 1s ease 1 forwards;
+}
 
-    .text-formatation{
-        font-size: 17px;
-        padding: 10px 50px 10px 50px;
-        color: var(--dark-primary-color);
-    }
 
-    .text-formatation-title{
-        font-size: 20px;
-        padding: 10px 50px 10px 50px;
-    }
-
-    .text-background{
-        padding: 15px;
-        border-radius: 2%;
-        border-width: 30px;
-        background-color: rgba(255, 255, 255, 0.048);
-        box-shadow: 0 2px 8px rgb(35 32 10 / 40%);
-    }
+b {
+  color: var(--second-color);
 }
 
 
 
-b{
-    color: var(--second-color);
+@keyframes font-color-night {
+  0% {
+    color: var(--dark-primary-color);
+  }
+
+  100% {
+    color:  var(--primary-color);
+  }
+}
+
+@keyframes font-color-day {
+  0% {
+    color:  var(--primary-color);
+  }
+
+  100% {
+    color:  var(--dark-primary-color);
+  }
 }

@@ -1,15 +1,16 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 html, body { height: 100%;}
 body {
 
-    --primary-color: #fcfcfc;
+    --primary-color: #fff2f2;
     --second-color: #0088e2;
-    --dark-primary-color:#0e0e0f;
+    --dark-primary-color:#4b4b4b;
     --dark-second-color:#226897;
     height: 100%;
     margin: 0;
-    font-family: "Fira Code";
+    /* font-family: "Oswald"; */
     /* background-color: colorR; */
 }
 

@@ -1,27 +1,18 @@
 @media only screen and (min-width: 900px) {
-  .workinformation {
+  .work-information {
     display: flex;
     padding: 10% 5% 0% 10%;
+    font-family: 'Kanit';
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
   }
 
   .datainfo-text {
-    display: flex;
-    width: -webkit-fill-available;
-    height: 100%;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
   }
 
-  .aboutme {
-    width: 80%;
-    font-family: fangsong;
-    font-size: 24px;
-    font-weight: bold;
-  }
 
   .sized-box {
     width: 650px;
@@ -37,8 +28,9 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .workinformation {
+  .work-information {
     display: flex;
+    font-family: 'Kanit';
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -46,12 +38,7 @@
   }
 
   .datainfo-text {
-    display: flex;
-    width: -webkit-fill-available;
-    padding:  2% 10% 0 10%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .sized-box {
@@ -64,22 +51,33 @@
     border-radius: 80%;
     box-shadow: 0 1px 10px rgba(7, 7, 7, 0.623);
   }
-
-  .aboutme {
-    width: 80%;
-    font-family: fangsong;
-    font-size: 18px;
-    font-weight: bold;
-  }
 }
 
+
+  .datainfo-text {
+    display: flex;
+    width: -webkit-fill-available;
+    padding: 2% 5% 0 5%;
+    font-family: 'Kanit';
+    height: 100%;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.aboutme {
+  font-size: 20px;
+  font-family: 'Kanit';
+  font-weight: 600;
+  padding: 1% 3% 1% 3%;
+}
 
 
 .aboutme.light-theme {
   animation: font-color-day 1s ease 1 forwards;
 }
 
-.aboutme.dark-theme{
+.aboutme.dark-theme {
   animation: font-color-night 1s ease 1 forwards;
 }
 
@@ -95,10 +93,11 @@
 
 .button.button-resume {
   color: var(--primary-color);
-  font-size: 20px;
+  font-size: 22px;
+  font-family: 'Kanit';
   font-weight: 500;
   border-radius: 20px;
-  padding: 5% 30%;
+  padding: 5% 27%;
   background-color: var(--second-color);
   border-color: var(--second-color);
 }
@@ -139,23 +138,22 @@ b {
 }
 
 
-@keyframes font-color-night{
-  0%{
-    color: #0e0e0f;
+@keyframes font-color-night {
+  0% {
+    color: var(--dark-primary-color);
   }
 
   100% {
-    color: rgb(255, 255, 255);
+    color:  var(--primary-color);
   }
 }
 
-@keyframes font-color-day{
-  0%{
-    color: rgb(255, 255, 255);
+@keyframes font-color-day {
+  0% {
+    color:  var(--primary-color);
   }
 
   100% {
-    color: #0e0e0f;
+    color:  var(--dark-primary-color);
   }
 }
-

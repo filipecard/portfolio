@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Profile Pro';
+    src: local('Profile Pro Regular'), local('Profile-Pro-Regular'),
+        url('ProfilePro-Regular.woff2') format('woff2'),
+        url('ProfilePro-Regular.woff') format('woff'),
+        url('ProfilePro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

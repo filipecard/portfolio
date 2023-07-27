@@ -1,18 +1,36 @@
 <div class="work-information">
-
-    <div class="text-formatation-title"> <b>Histórico Academico</b>  </div>
-    <br>
-    <div class="text-background">
-        <li class="text-formatation"> Iniciei minha formação acadêmica em 2019, me matriculando no curso de Análise e Desenvolvimento de Sistemas (<b>ADS</b>) pelo Instituto Federal do Piauí (<b>IFPI</b>). Sem conhecimento prévio sobre programação foi um desafio interessante e muito gratificante.
-        </li>
-        <br>
-        <li class="text-formatation"> Durante o andamento do curso, procurei atividades extracurriculares para engrandecer ainda mais meus conhecimentos, dentre elas: palestras, monitoria, estágio, eventos voltados para programação e laboratório de pesquisa. Com essas atividades, tive a oportunidade de conhecer a área de <b>Game Developer</b> e ampliar meu <b>networking </b> dentro e fora da instituição.
-        </li>
-        <br>
-        <li class="text-formatation"> Em 2021, em meio a pandemia, resolvi iniciar a busca por estágios, em busca de garantir mais habilidades profissionais, foi então que iniciei meu estágio de 9 meses na empresa Simples Informática. Com uma boa performance e aproveitamento, desenvolvi habilidades técnicas voltadas para o desenvolvimento com o <b>Front-end</b> e <b>Back-end</b>, além de algumas <b>soft skills</b>: liderança, comunicação, proatividade, criatividade e trabalho em equipe.
-        </li>
-        <br>
-        <li class="text-formatation"> Em pelo 2022, ano da tecnologia, conclui minha formação acadêmica, focando completamente nas matérias que faltavam e no desenvolvimento do meu <b>TCC</b>. O tema final abordado foi o uso de <b>Realidade Virtual</b> no auxílio do ensino, utilizando simulação de ambiente para o desenvolvimento do projeto, especificamente com uma temática prática em uma turma de fibra óptica. Por fim, com uma nota aprovativa conclui o curso.
-        </li>
+  <br>
+  <div class="text-formatation" style="font-size: 22px; font-weight: 600;"
+    [ngClass]="{'dark-theme': this._themeService.getTheme() !== 'day', 'light-theme': this._themeService.getTheme() === 'day'}">
+    Histórico Academico </div>
+  <br>
+  <div class="text-background">
+    <div class="text-formatation"
+      [ngClass]="{'dark-theme': this._themeService.getTheme() !== 'day', 'light-theme': this._themeService.getTheme() === 'day'}">
+      <li> Iniciei minha formação acadêmica em 2019, me matriculando no curso de Análise e Desenvolvimento de Sistemas
+        (<b>ADS</b>) pelo Instituto Federal do Piauí (<b>IFPI</b>). Sem conhecimento prévio sobre programação foi um
+        desafio interessante e muito gratificante.
+      </li>
+      <br>
+      <li> Durante o andamento do curso, procurei atividades extracurriculares para engrandecer ainda mais meus
+        conhecimentos, dentre elas: palestras, monitoria, estágio, eventos voltados para programação e laboratório de
+        pesquisa. Com essas atividades, tive a oportunidade de conhecer a área de <b>Game Developer</b> e ampliar meu
+        <b>networking </b> dentro e fora da instituição.
+      </li>
+      <br>
+      <li> Em 2021, em meio a pandemia, resolvi iniciar a busca por estágios, em busca de garantir mais habilidades
+        profissionais, foi então que iniciei meu estágio de 9 meses na empresa Simples Informática. Com uma boa
+        performance e aproveitamento, desenvolvi habilidades técnicas voltadas para o desenvolvimento com o
+        <b>Front-end</b> e <b>Back-end</b>, além de algumas <b>soft skills</b>: liderança, comunicação, proatividade,
+        criatividade e trabalho em equipe.
+      </li>
+      <br>
+      <li> Em pelo 2022, ano da tecnologia, conclui minha formação acadêmica, focando completamente nas matérias que
+        faltavam e no desenvolvimento do meu <b>TCC</b>. O tema final abordado foi o uso de <b>Realidade Virtual</b> no
+        auxílio do ensino, utilizando simulação de ambiente para o desenvolvimento do projeto, especificamente com uma
+        temática prática em uma turma de fibra óptica. Por fim, com uma nota aprovativa conclui o curso.
+      </li>
     </div>
+
+  </div>
 </div>

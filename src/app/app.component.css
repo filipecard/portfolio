@@ -40,19 +40,17 @@
     width: 100%;
   }
 
-
+  .workpage {
+    height: 100%;
+  }
 }
-
-
 
 .workpage.workpage-day {
   animation: timelapse-day 1s ease 1 forwards;
-
 }
 
 .workpage.workpage-sunset {
   animation: timelapse-sunset 1s ease 1 forwards;
-
 }
 
 .workpage.workpage-night {
