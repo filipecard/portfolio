@@ -9,9 +9,7 @@ import { ThemeService } from '../services/theme.service';
 export class InfoContatoComponent {
   constructor(
     public themeService: ThemeService
-  ) {
-    console.log(this.windowSizeLarge)
-  }
+  ) { }
 
   public windowSizeLarge = screen.width > 700;
 
