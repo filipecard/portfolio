@@ -15,6 +15,18 @@ export class ThemeService {
     return this._timePeriod[this._indexPeriod];
   }
 
+  isThemeDay(){
+    return this._timePeriod[this._indexPeriod] === 'day';
+  }
+
+  isThemeSunset(){
+    return this._timePeriod[this._indexPeriod] === 'sunset';
+  }
+
+  isThemeNight(){
+    return this._timePeriod[this._indexPeriod] === 'night';
+  }
+
   nextPeriod(){
 
     this._indexPeriod += 1;

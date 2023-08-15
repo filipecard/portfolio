@@ -135,6 +135,36 @@ button {
 
 b {
   color: var(--second-color);
+  font-weight: 550;
+}
+
+b.day-bold-color {
+  animation: bold-font-color-day 1s ease 1 forwards;
+}
+
+b.sunset-bold-color {
+  animation: bold-font-color-sunset 1s ease 1 forwards;
+}
+
+
+
+@keyframes bold-font-color-day {
+  0% {
+    color: var(--sunset-color);
+  }
+
+  100% {
+    color:  var(--second-color);
+  }
+}
+@keyframes bold-font-color-sunset {
+  0% {
+    color: var(--second-color);
+  }
+
+  100% {
+    color:  var(--sunset-color);
+  }
 }
 
 

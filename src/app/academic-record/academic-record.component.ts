@@ -8,6 +8,6 @@ import { ThemeService } from '../services/theme.service';
 })
 export class AcademicRecordComponent {
   constructor(
-    public _themeService: ThemeService
+    public themeService: ThemeService
   ){}
 }

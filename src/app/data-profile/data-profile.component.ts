@@ -9,7 +9,7 @@ import { ThemeService } from '../services/theme.service';
 export class DataProfileComponent {
 
   constructor(
-    public _themeService: ThemeService
+    public themeService: ThemeService
   ){}
 
   getAge(): number{

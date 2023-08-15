@@ -9,11 +9,15 @@
     <img class="profile-image" src="https://avatars.githubusercontent.com/u/49026995?v=4" alt="Avatar">
     <span style="opacity: 0;">espaço</span>
     <div class="aboutme"
-      [ngClass]="{'dark-theme': this._themeService.getTheme() !== 'day', 'light-theme': this._themeService.getTheme() === 'day'}">
-      <p style="font-size: 23px;">Olá, meu nome é </p>
-      <p style="color: var(--second-color); ">FILIPE CARDOSO</p>
+      [ngClass]="{'dark-theme': !this.themeService.isThemeDay() , 'light-theme': this.themeService.isThemeDay() }">
+      <p style="font-size: 23px;">Olá, eu sou </p>
+      <p><b
+          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">FILIPE
+          CARDOSO</b></p>
       <br>
-      <p> Tenho {{getAge()}} anos e sou <b> Full-Stack Developer</b>. Apaixonado pela área de
+      <p> Tenho {{getAge()}} anos e sou <b
+          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">
+          Full-Stack Developer</b>. Apaixonado pela área de
         programação, designer e jogos. Aqui há algumas informações pessoais e profissionais, caso tenha interesse ou
         dúvidas, me contate em alguma das redes sociais. </p>
     </div>

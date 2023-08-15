@@ -1,34 +1,51 @@
 <div class="work-information">
   <br>
   <div class="text-formatation" style="font-size: 22px; font-weight: 600;"
-    [ngClass]="{'dark-theme': this._themeService.getTheme() !== 'day', 'light-theme': this._themeService.getTheme() === 'day'}">
+    [ngClass]="{'dark-theme': !this.themeService.isThemeDay(), 'light-theme': this.themeService.isThemeDay()}">
     Histórico Academico </div>
   <br>
   <div class="text-background">
     <div class="text-formatation"
-      [ngClass]="{'dark-theme': this._themeService.getTheme() !== 'day', 'light-theme': this._themeService.getTheme() === 'day'}">
+      [ngClass]="{'dark-theme': !this.themeService.isThemeDay(), 'light-theme': this.themeService.isThemeDay()}">
       <li> Iniciei minha formação acadêmica em 2019, me matriculando no curso de Análise e Desenvolvimento de Sistemas
-        (<b>ADS</b>) pelo Instituto Federal do Piauí (<b>IFPI</b>). Sem conhecimento prévio sobre programação foi um
+        (<b
+          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">ADS</b>)
+        pelo Instituto Federal do Piauí (<b
+          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">IFPI</b>).
+        Sem conhecimento prévio sobre programação foi um
         desafio interessante e muito gratificante.
       </li>
       <br>
       <li> Durante o andamento do curso, procurei atividades extracurriculares para engrandecer ainda mais meus
         conhecimentos, dentre elas: palestras, monitoria, estágio, eventos voltados para programação e laboratório de
-        pesquisa. Com essas atividades, tive a oportunidade de conhecer a área de <b>Game Developer</b> e ampliar meu
-        <b>networking </b> dentro e fora da instituição.
+        pesquisa. Com essas atividades, tive a oportunidade de conhecer a área de <b
+          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Game
+          Developer</b> e ampliar meu
+        <b
+          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">networking
+        </b> dentro e fora da instituição.
       </li>
       <br>
-      <li> Em 2021, em meio a pandemia, resolvi iniciar a busca por estágios, em busca de garantir mais habilidades
+      <li> Em 2021, em meio a pandemia, resolvi iniciar a busca por estágios, a fim de garantir mais habilidades
         profissionais, foi então que iniciei meu estágio de 9 meses na empresa Simples Informática. Com uma boa
         performance e aproveitamento, desenvolvi habilidades técnicas voltadas para o desenvolvimento com o
-        <b>Front-end</b> e <b>Back-end</b>, além de algumas <b>soft skills</b>: liderança, comunicação, proatividade,
-        criatividade e trabalho em equipe.
+        <b
+          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Front-end</b>
+        e <b
+          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Back-end</b>,
+        além de algumas <b
+          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">soft
+          skills</b>.
       </li>
       <br>
-      <li> Em pelo 2022, ano da tecnologia, conclui minha formação acadêmica, focando completamente nas matérias que
-        faltavam e no desenvolvimento do meu <b>TCC</b>. O tema final abordado foi o uso de <b>Realidade Virtual</b> no
-        auxílio do ensino, utilizando simulação de ambiente para o desenvolvimento do projeto, especificamente com uma
-        temática prática em uma turma de fibra óptica. Por fim, com uma nota aprovativa conclui o curso.
+      <li> Em 2022, conclui minha formação acadêmica, focando completamente no desenvolvimento do meu <b
+          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">TCC</b>.
+        O tema
+        final abordado foi o uso de <b
+          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Realidade
+          Virtual</b> no ensino de fibra óptica. Para esse projeto foi simulado
+        no ambiente virtual, um dos laboratórios do IFPI - Campus Teresina Central, através do uso da Unreal Engine e o
+        equipamento Oculos Quest 2.
       </li>
     </div>
 

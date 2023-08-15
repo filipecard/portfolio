@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-technical-knowledge',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./technical-knowledge.component.css']
 })
 export class TechnicalKnowledgeComponent {
+  constructor(
+    public themeService: ThemeService
+  ) {}
+
   public controllerHardSkills = true;
   public controllerSoftSkills = false;
 
