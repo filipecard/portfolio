@@ -1,14 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
-html, body { height: 100%; }
-body { 
-    --primary-color: #ffffff;
-    --background-main: #141414;
-    --background-secondary: #1b1b1b;
-    --secondary-collor: #8f2a2d;
-    --primary-shadow: #18505d;
+html, body { height: 100%;}
+body {
 
-    margin: 0; 
-    font-family: "Fira Code";
-    background-color: var(--background-main);
+    --primary-color: #fff2f2;
+    --second-color: #0088e2;
+    --sunset-color: #d9f100;
+    --dark-primary-color:#4b4b4b;
+    --dark-second-color:#226897;
+    height: 100%;
+    margin: 0;
+    /* font-family: "Oswald"; */
+    /* background-color: colorR; */
 }
+

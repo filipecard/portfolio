@@ -1,132 +1,110 @@
-.mainDiv {
-    height: 70%;
-    width: 100%;
-}
-
-p {
-    font-family: "Fira Code";
-    color: var(--primary-color);
-    text-align: center;
-    font-size: medium;
-}
-
-.topDiv {
+@media only screen and (min-width: 600px) {
+  .workpage {
     display: flex;
-    height: 82.5px;
-    width: 100%;
-    justify-content: center;
-    box-shadow: 0 5px 5px -5px var(--secondary-collor);
-
+    flex-direction: row;
+    justify-content: flex-start;
+    background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 14%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 33%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
+    background-size: 900% 200%;
+    background-position: 55% 40%;
+  }
 }
 
-.title {
-    font-size: 56px;
-    font-family: "Fira Code";
-    margin-top: 35px;
-    color: var(--primary-color);
-    text-shadow: 1px 1px 4px var(--primary-color);
-}
-
-.contentAreaDiv {
+@media only screen and (max-width: 600px) {
+  .workpage {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
     height: 100%;
-    width: 100%;
-}
-
-.socialDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 10px;
-    text-align: center;
+    background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 14%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 33%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
+    background-size: 900% 200%;
+    background-position: 55% 40%;
+  }
 }
 
 
-
-.icons {
+@media only screen and (min-width: 900px) {
+  .orientation-menu-theme-button {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+  }
+
+  .workpage {
+    height: 100%;
+  }
 }
 
-.icons img {
-    width: 64px;
-}
-
-.icons img:hover {
-    filter: invert(30%) sepia(20%) saturate(1000%) hue-rotate(20deg) brightness(150%) contrast(120%);
-}
-
-.mainContentDiv {
-    background-color: var(--background-secondary);
+@media only screen and (max-width: 900px) {
+  .orientation-menu-theme-button {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
+  }
+
+  .workpage {
+    height: 100%;
+  }
 }
 
-.mainContentDiv hr {
-    background-color: var(--secondary-collor);
-    height: 1px;
-    border: none;
-    width: 100%;
+.workpage.workpage-day {
+  animation: timelapse-day 1s ease 1 forwards;
 }
 
-.conteudoSumary {
-    padding: 0 100px 0 100px;
+.workpage.workpage-sunset {
+  animation: timelapse-sunset 1s ease 1 forwards;
 }
 
-.conteudoSumary a {
-    color: rgb(34, 212, 212);
-    text-decoration: none;
+.workpage.workpage-night {
+  animation: timelapse-night 1s ease 1 forwards;
+
 }
 
-.cardsContentDiv{
-    background-color: var(--background-secondary);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-    
+.div-theme-button {
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-.cardItem {
-    background-color: var(--secondary-collor);
-    max-width: 200px;
-    
+.button.sunset-theme{
+  background-color: #a03b00;
 }
 
-.cardItem a{
-    color: var(--primary-color);
-    text-decoration: none;
+.button.day-theme{
+  background-color: #ffffff; color: #00062a;
 }
 
-.cardGameItemHeaderImage {
-    background-image: url('../assets/gameIcon.jpg');
-    background-size: cover;
-    
+.button.night-theme{
+  background-color: #444861;
 }
 
-.cardSourceItemHeaderImage {
-    background-image: url('../assets/source.png');
-    background-size: cover;
+@keyframes timelapse-day {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 55% 40%;
+  }
+
 }
 
+@keyframes timelapse-sunset {
+  0% {
+    background-position: 55% 40%;
+  }
 
+  100% {
+    background-position: 20% 30%;
+  }
 
-.footerContentDiv{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    
 }
 
-.footerContentDiv a {
-    color: var(--primary-color);
-    text-decoration: none;
+@keyframes timelapse-night {
+  0% {
+    background-position: 20% 30%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
 }

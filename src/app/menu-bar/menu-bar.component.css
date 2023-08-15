@@ -1,0 +1,46 @@
+
+@media only screen and (min-width: 900px ) {
+    .menu-bar{
+      flex-direction: column;
+      width: 100px;
+      height: 100%;
+      background-color: rgb(255 255 255 / 28%);
+    }
+}
+
+
+@media only screen  and (max-width: 900px ){
+    .menu-bar{
+        flex-direction: row;
+        height: 120%;
+        background-color: rgb(255 255 255 / 28%);
+    }
+}
+
+.menu-bar{
+  display: flex;
+  background-color: rgb(255 255 255 / 28%);
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+button{
+    outline: none;
+    transition: all 0.1s linear;
+}
+
+.button.select-options{
+  color: #ffffff;
+  background: #00000040;
+}
+
+
+.button.select-options:hover {
+  color:white;
+  background: var(--second-color);
+}
+
+
+

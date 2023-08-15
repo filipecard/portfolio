@@ -1,0 +1,90 @@
+@import "../data-profile/data-profile.component.css";
+
+
+@media only screen and (min-width: 1024px) {
+
+  .text-formatation {
+    font-size: 23px;
+  }
+
+  .text-formatation.title {
+    font-size: 26px;
+  }
+
+
+  .text-background {
+    padding: 15px;
+    border-radius: 2%;
+    border-width: 30px;
+    background-color: rgba(255, 255, 255, 0.048);
+    box-shadow: 0 2px 8px rgb(35 32 10 / 40%);
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .text-formatation {
+    font-size: 20px;
+  }
+
+  .text-formatation.title {
+    font-size: 20px;
+  }
+
+  .text-background {
+    display: block;
+    overflow-y: scroll;
+    height: 65vh;
+    padding: 15px;
+    border-radius: 2%;
+    border-width: 30px;
+    box-shadow: 0 2px 8px rgb(35 32 10 / 40%);
+  }
+}
+
+
+.text-formatation {
+  font-size: 20px;
+  padding: 1% 5% 1% 5%;
+  color: var(--dark-primary-color);
+}
+
+.text-formatation.title {
+  font-size: 20px;
+  color: var(--dark-primary-color);
+  padding: 1% 5% 1% 5%;
+}
+
+
+.text-formatation.light-theme {
+  animation: font-color-day 1s ease 1 forwards;
+}
+
+.text-formatation.dark-theme {
+  animation: font-color-night 1s ease 1 forwards;
+}
+
+
+
+@keyframes font-color-night {
+  0% {
+    color: var(--dark-primary-color);
+  }
+
+  100% {
+    color:  var(--primary-color);
+  }
+}
+
+
+
+@keyframes font-color-day {
+  0% {
+    color:  var(--primary-color);
+  }
+
+  100% {
+    color:  var(--dark-primary-color);
+  }
+}

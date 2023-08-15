@@ -1,0 +1,54 @@
+@import "../academic-record/academic-record.component.css";
+
+
+
+a:hover{
+    text-decoration: none;
+    color: white
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* .text-background{
+    display: flex;
+    flex-direction: column;
+} */
+/* @media only screen and (min-width: 1249px ) {
+    .work-information{
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        padding-left: 500px;
+    }
+
+    .text-formatation{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 900px ) and (max-width: 1249px ){
+    .work-information{
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        padding-left: 200px;
+    }
+
+    .text-formatation{
+
+        font-size: 20px;
+    }
+}
+
+@media only screen  and (max-width: 900px ){
+    .work-information{
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        padding-left: 20px;
+    }
+
+    .text-formatation{
+        font-size: 18px;
+    }
+} */

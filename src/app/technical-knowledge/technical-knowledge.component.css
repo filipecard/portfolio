@@ -1,0 +1,15 @@
+@import "../academic-record/academic-record.component.css";
+
+
+.mat-expansion-panel-header{
+    background-color:rgba(255, 255, 255, 0.048)
+}
+
+.mat-expansion-panel {
+  background: #ffffff41;
+}
+
+.text-bold {
+  color: var(--second-color);
+  font-weight: 550;
+}
