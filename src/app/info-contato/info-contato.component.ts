@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-info-contato',
@@ -6,11 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./info-contato.component.css']
 })
 export class InfoContatoComponent {
+  constructor(
+    public themeService: ThemeService
+  ) {
+    console.log(this.windowSizeLarge)
+  }
+
+  public windowSizeLarge = screen.width > 700;
 
 
-  // redirectToWhatsapp(){
-  //   window.open("https://wa.me/5586981346155", "_blank");
-  // }
 
   redirectToLinkedin(){
     window.open("https://www.linkedin.com/in/filipecarolidev/", "_blank");
@@ -20,8 +25,8 @@ export class InfoContatoComponent {
     window.open("https://github.com/filipecard", "_blank");
   }
 
-  redirectMyInstagran(){
-    window.open("https://www.instagram.com/filipe_caroli/", "_blank");
+  redirectToEmail(){
+    window.open('mailto:filipecardosooliveira@hotmail.com', "_blank")
   }
 
 }

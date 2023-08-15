@@ -1,33 +1,49 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- <br *ngFor="let item of [1,2,3,4,5,6,7,8]"> -->
+
 <div class="work-information">
+  <br><br>
+  <div class="text-formatation" style="font-size: 22px; font-weight: 600;"
+    [ngClass]="{'dark-theme': !this.themeService.isThemeDay(), 'light-theme': this.themeService.isThemeDay()}">
+    Por fim, deixo aqui formas de me contatar:
+  </div>
+  <br><br>
+  <div class="text-formatation"
+    [ngClass]="{'dark-theme': !this.themeService.isThemeDay(), 'light-theme': this.themeService.isThemeDay()}">
+    <p>
+      Email:
 
-    <b class="text-formatation-title">Contate-me das seguintes formas:</b>
-    <br>
-    <div class="text-background">
-        <span class="text-formatation">
-            <b><i class="fa fa-envelope"></i></b> filipecardosooliveira@hotmail.com
-        </span>
-        <span class="text-formatation">
-            <b><i class="fa fa-linkedin-square"></i></b>
-            <a (click)="redirectToLinkedin()"> filipecarolidev</a>
-        </span>
-        <span class="text-formatation">
-            <b><i class="fa fa-github"></i></b>
-            <a (click)="redirectToGithub()"> filipecard</a>
-        </span>
+      <b
+        [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">
+        <a (click)="this.redirectToEmail()">filipecardosooliveira </a>
+      </b>
+    </p>
+  </div>
+  <div class="text-formatation"
+    [ngClass]="{'dark-theme': !this.themeService.isThemeDay(), 'light-theme': this.themeService.isThemeDay()}">
+    <p>
+      Linkedin:
+      <b
+        [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">
+        <a (click)="this.redirectToLinkedin()">filipecarolidev</a>
+      </b>
+    </p>
+  </div>
+  <div class="text-formatation"
+    [ngClass]="{'dark-theme': !this.themeService.isThemeDay(), 'light-theme': this.themeService.isThemeDay()}">
+    <p>
+      Github:
+      <b
+        [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">
+        <a (click)="this.redirectToGithub()">Filipecard </a>
+      </b>
+    </p>
+  </div>
+  </div>
+  <span style="opacity: 0;">espaço espaço espaço espaço espaço espaço espaço espaçoespaço espaço espaço espaçoespaço
+    espaço espaço espaçoespaço espaço espaço espaçoespaço espaço espaço espaço espaço espaço espaçoespaço espaço espaço
+    espaçoespaço espaço espaço espaçoespaço espaço espaçoespaço espaço espaço espaçoespaço espaço espaço espaçoespaço
+    espaço espaçoespaço espaço espaço espaçoespaço espaço espaço espaçoespaço espaço </span>
 
-
-    <a (click)="redirectToGithub()">
-      <button mat-fab class="button button-social-media">
-        <i class="fa fa-github icon-social-media"></i>
-      </button>
-    </a>
-    <span style="opacity: 0;">p</span>
-    <a (click)="redirectMyInstagran()">
-      <button mat-fab class="button button-social-media">
-        <i class="fa fa-instagram icon-social-media"></i>
-      </button>
-    </a>
-    </div>
-</div>
+<br>

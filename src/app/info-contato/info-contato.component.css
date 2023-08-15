@@ -1,20 +1,22 @@
 @import "../academic-record/academic-record.component.css";
 
 
-a{
-    color:  var(--dark-primary-color);
-}
 
 a:hover{
     text-decoration: none;
-    color: var(--second-color)
+    color: white
 }
 
-.text-background{
+a{
+  text-decoration: none;
+}
+
+
+/* .text-background{
     display: flex;
     flex-direction: column;
-}
-@media only screen and (min-width: 1249px ) {
+} */
+/* @media only screen and (min-width: 1249px ) {
     .work-information{
         width: -webkit-fill-available;
         height: -webkit-fill-available;
@@ -49,4 +51,4 @@ a:hover{
     .text-formatation{
         font-size: 18px;
     }
-}
+} */
