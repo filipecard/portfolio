@@ -19,7 +19,7 @@ export class DataProfileComponent {
   }
 
   redirectMyResume(){
-    window.open("https://drive.google.com/file/d/1I0HxqlX-AuECO7sXzYYxlVEcEbq6qTDl/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1os66Vfe8ckyJQELZXFlbh9KDTUDt_7nq/view?usp=sharing", "_blank");
   }
 
 }
