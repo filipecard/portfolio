@@ -21,5 +21,4 @@ export class DataProfileComponent {
   redirectMyResume(){
     window.open("https://drive.google.com/file/d/1os66Vfe8ckyJQELZXFlbh9KDTUDt_7nq/view?usp=sharing", "_blank");
   }
-
 }
