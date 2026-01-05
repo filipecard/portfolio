@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { ThemeService } from '../services/theme.service';
 
 @Component({
-  selector: 'app-technical-knowledge',
-  templateUrl: './technical-knowledge.component.html',
-  styleUrls: ['./technical-knowledge.component.css']
+    selector: 'app-technical-knowledge',
+    templateUrl: './technical-knowledge.component.html',
+    styleUrls: ['./technical-knowledge.component.css'],
+    standalone: false
 })
 export class TechnicalKnowledgeComponent {
   constructor(

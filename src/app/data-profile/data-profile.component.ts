@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { ThemeService } from '../services/theme.service';
 
 @Component({
-  selector: 'app-data-profile',
-  templateUrl: './data-profile.component.html',
-  styleUrls: ['./data-profile.component.css']
+    selector: 'app-data-profile',
+    templateUrl: './data-profile.component.html',
+    styleUrls: ['./data-profile.component.css'],
+    standalone: false
 })
 export class DataProfileComponent {
 

@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { ThemeService } from '../services/theme.service';
 
 @Component({
-  selector: 'app-info-contato',
-  templateUrl: './info-contato.component.html',
-  styleUrls: ['./info-contato.component.css']
+    selector: 'app-info-contato',
+    templateUrl: './info-contato.component.html',
+    styleUrls: ['./info-contato.component.css'],
+    standalone: false
 })
 export class InfoContatoComponent {
   constructor(
