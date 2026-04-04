@@ -1,23 +1,70 @@
-<div class="menu-bar">
-  <button class="button select-options" mat-fab (click)="choiceDataOptionService.setChoiceOption(0)">
-    <span class="material-symbols-outlined"> home </span>
-  </button>
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="nav-inner">
 
-  <button class="button select-options" mat-fab (click)="choiceDataOptionService.setChoiceOption(1)">
-    <span class="material-symbols-outlined">
-      book
-    </span>
-  </button>
+    <!-- Logo -->
+    <button class="nav-logo" (click)="scrollTo('inicio')">
+      <span class="logo-mark">FC</span>
+      <span class="logo-name">Filipe Cardoso</span>
+    </button>
 
-  <button class="button select-options" mat-fab (click)="choiceDataOptionService.setChoiceOption(2)">
-    <span class="material-symbols-outlined"> feed </span>
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li *ngFor="let link of navLinks">
+        <button
+          class="nav-link"
+          [class.active]="activeSection === link.id"
+          (click)="scrollTo(link.id)"
+        >
+          <span class="nav-num mono">{{ link.num }}</span>
+          <span class="nav-label">{{ link.label }}</span>
+        </button>
+      </li>
+    </ul>
 
-  </button>
+    <!-- Right slot -->
+    <div class="nav-actions">
+      <button class="theme-toggle" (click)="themeService.toggle()" [attr.aria-label]="themeService.isDark() ? 'Mudar para tema claro' : 'Mudar para tema escuro'">
+        <!-- Sun -->
+        <svg *ngIf="themeService.isDark()" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <!-- Moon -->
+        <svg *ngIf="!themeService.isDark()" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
 
-  <button class="button select-options" mat-fab (click)="choiceDataOptionService.setChoiceOption(3)">
-    <span class="material-symbols-outlined">
-      call
-    </span>
-  </button>
+      <!-- Mobile hamburger -->
+      <button class="hamburger" (click)="toggleMobile()" [attr.aria-label]="'Menu'">
+        <span [class.open]="isMobileOpen"></span>
+        <span [class.open]="isMobileOpen"></span>
+        <span [class.open]="isMobileOpen"></span>
+      </button>
+    </div>
+  </div>
 
-</div>
+  <!-- Mobile menu -->
+  <div class="mobile-menu" [class.open]="isMobileOpen">
+    <ul class="mobile-links">
+      <li *ngFor="let link of navLinks; let i = index">
+        <button
+          class="mobile-link"
+          [class.active]="activeSection === link.id"
+          (click)="scrollTo(link.id)"
+          [style.animation-delay]="(i * 0.06) + 's'"
+        >
+          <span class="mobile-num mono">{{ link.num }}</span>
+          <span>{{ link.label }}</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>

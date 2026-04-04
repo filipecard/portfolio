@@ -1,134 +1,81 @@
-<div class="work-information">
-  <br>
-  <div class="text-background">
-    <p></p>
-    <mat-expansion-panel showToggle [expanded]="controllerHardSkills"
-      (opened)="this.controllerHardSkills= true; closeSoftSkills()">
-      <mat-expansion-panel-header class="mat-expansion-panel-header">
-        <mat-panel-title style="flex-grow: 4; height: 50px;">
-          <div class="text-formatation-title" style="font-size: 22px; font-weight: 600;"> <b
-              [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Hard
-              Skills: </b></div>
-        </mat-panel-title>
-        <!-- <mat-panel-description>
-              This is a summary of the content
-            </mat-panel-description> -->
-      </mat-expansion-panel-header>
-      <br>
-      <div>
-        <li class="text-formatation"
-          [ngClass]="{'dark-theme': !this.themeService.isThemeDay() , 'light-theme': this.themeService.isThemeDay() }">
-          <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Python:</b>
-          Primeira linguágem aprendia. Aplicada em projetos web de forma simples com Django, mas conhecimentos mais
-          aprofundados com <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Web
-            Scraping</b> e <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Data
-            Science</b>, utilizando de bibliotecas como <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">pandas</b>,
-          <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">matplotlib</b>,
-          <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">beautifulsoup</b>,
-          <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">numpy</b>,
-          etc...Com alguns certificações apresentaveis:
-          <p></p>
-          <p class="list-certifications">
-            <b [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}"
-              (click)="showCertificationPCAP()"><a> PCAP: Programming Essentials in Python</a></b>
-          </p>
-          <p class="list-certifications">
-            <b [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}"
-              (click)="showCertificationCodingTank()"><a> Ada & Americanas: Coding Tank</a></b>
-          </p>
-        </li>
-      </div>
+<div class="skills-section">
+  <span class="skills-watermark" aria-hidden="true">03</span>
 
-      <br>
+  <div class="section-inner skills-inner">
 
-      <div>
-        <li class="text-formatation"
-          [ngClass]="{'dark-theme': this.themeService.getTheme() !== 'day', 'light-theme': this.themeService.getTheme() === 'day'}">
-          <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Angular
-            & Delphi:</b> O framkework e a linguágem em questão, foram aprendidos e desenvolvidas em conjunto, durante o
-          <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">estágio</b>
-          na empresa <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Simples
-            Informatica e Consultoria LTDA</b>. Durante 9 meses foram gerados conhecimentos necessários para formação
-          profissional como <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Full-Stack</b>
-          com tais ferramentas, além de algumas soft skills. Nesse estágio tinha como responsabilidades: <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">
-            criação de telas, refatoração de códigos, análise de requisitos, criação de novos serviços e manutenção de
-            códigos antigos, tanto na atualização, quanto performace.
-          </b>
-        </li>
-      </div>
+    <div class="section-header">
+      <p class="section-label">competências</p>
+      <h2 class="section-heading">Habilidades Técnicas</h2>
+      <div class="section-divider"></div>
+    </div>
 
-      <br>
-
-      <div>
-        <li class="text-formatation"
-          [ngClass]="{'dark-theme': this.themeService.getTheme() !== 'day', 'light-theme': this.themeService.getTheme() === 'day'}">
-          <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">PostgreSQL
-            & Git:</b> Sobre banco de dados e versionamento de código, são habilidades desenvolvidas durante a <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">formaçao
-            acadêmica</b> e ainda mais reforçadas durante o <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">estágio</b>,
-          com experiência em modelagem de banco de dados e formatação das informações com PostgreSQL. Com o Git,
-          gerenciamento de tarefas, controle de versão e padronização de commits, ultilizando ferramentas auxiliares para
-          gerencia de equipe.
-        </li>
-      </div>
-    </mat-expansion-panel>
-
-    <br>
-
-    <mat-expansion-panel showToggle [expanded]="controllerSoftSkills"
-      (opened)="this.controllerSoftSkills = true;closeHardSkills()">
-      <mat-expansion-panel-header class="mat-expansion-panel-header">
-        <mat-panel-title style="flex-grow: 4;">
-          <div class="text-formatation-title" style="font-size: 22px; font-weight: 600;"> <b
-              [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Soft
-              Skills: </b></div>
-        </mat-panel-title>
-        <!-- <mat-panel-description>
-              This is a summary of the content
-              </mat-panel-description> -->
-      </mat-expansion-panel-header>
-      <br>
-      <div>
-        <div class="text-formatation"
-          [ngClass]="{'dark-theme': this.themeService.getTheme() !== 'day', 'light-theme': this.themeService.getTheme() === 'day'}">
-          Algumas dessas habilidades foram desenvolvidas duantes minha formação social, como:
-          <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">
-            <p></p>
-            <p> Atitude </p>
-            <p> Proatividade </p>
-            <p> Criatividade </p>
-            <p> Auto-aperfeiçoamento </p>
-            <p> Curiosidade </p>
-          </b>
-
-          <br><br><br>
-          Já outras que se mostravam mais sutis, foram se destacando a medida que interagia com colegas de sala e no
-          trabalho, assim como:
-          <b
-            [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">
-            <p></p>
-            <p> Liderança </p>
-            <p> Atenção </p>
-            <p> Pontualidade </p>
-            <p> Comunicação </p>
-          </b>
+    <!-- Skill groups -->
+    <div class="skills-grid">
+      <div
+        class="skill-group"
+        *ngFor="let group of skillGroups"
+        [class]="'skill-group--' + group.color"
+      >
+        <div class="group-header">
+          <div class="group-dot" [class]="'dot--' + group.color"></div>
+          <span class="group-label">{{ group.label }}</span>
+        </div>
+        <div class="group-tags">
+          <span
+            class="skill-tag"
+            [class]="'tag--' + group.color"
+            *ngFor="let skill of group.skills"
+          >{{ skill }}</span>
         </div>
       </div>
-    </mat-expansion-panel>
+    </div>
+
+    <!-- Certifications -->
+    <div class="certs-section">
+      <h3 class="subsection-heading">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+        </svg>
+        Certificações
+      </h3>
+      <div class="certs-list">
+        <div
+          class="cert-card"
+          *ngFor="let cert of certifications"
+          [class.clickable]="cert.url"
+          (click)="openCert(cert.url)"
+          [attr.role]="cert.url ? 'button' : null"
+          [attr.tabindex]="cert.url ? 0 : null"
+          (keydown.enter)="openCert(cert.url)"
+        >
+          <div class="cert-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">{{ cert.name }}</span>
+            <span class="cert-issuer">{{ cert.issuer }}</span>
+          </div>
+          <svg *ngIf="cert.url" class="cert-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soft skills -->
+    <div class="soft-section">
+      <h3 class="subsection-heading">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+        Soft Skills
+      </h3>
+      <div class="soft-tags">
+        <span class="soft-tag" *ngFor="let s of softSkills">{{ s }}</span>
+      </div>
+    </div>
+
   </div>
 </div>

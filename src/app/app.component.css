@@ -1,110 +1,67 @@
-@media only screen and (min-width: 600px) {
-  .workpage {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 14%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 33%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
-    background-size: 900% 200%;
-    background-position: 55% 40%;
-  }
+.portfolio-root {
+  min-height: 100vh;
+  background-color: var(--ink);
+  color: var(--text);
+  transition: background-color 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              color 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@media only screen and (max-width: 600px) {
-  .workpage {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    height: 100%;
-    background: linear-gradient(140deg, rgba(0,5,33,1) 1%, rgba(20,43,70,1) 14%, rgba(167,21,21,1) 24%, rgba(222,132,0,1) 33%, rgba(72,175,244,1) 46%, rgba(255,255,255,1) 58%);
-    background-size: 900% 200%;
-    background-position: 55% 40%;
-  }
+.main-content {
+  padding-top: var(--nav-h);
 }
 
-
-@media only screen and (min-width: 900px) {
-  .orientation-menu-theme-button {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .workpage {
-    height: 100%;
-  }
+/* ── Footer ─────────────────────────────────────────── */
+.site-footer {
+  background: var(--surface);
+  padding: 2rem 0;
+  margin-top: 2rem;
 }
 
-@media only screen and (max-width: 900px) {
-  .orientation-menu-theme-button {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .workpage {
-    height: 100%;
-  }
+.footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.workpage.workpage-day {
-  animation: timelapse-day 1s ease 1 forwards;
+.footer-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--indigo), var(--coral), transparent);
+  margin-bottom: 1.5rem;
+  opacity: 0.4;
 }
 
-.workpage.workpage-sunset {
-  animation: timelapse-sunset 1s ease 1 forwards;
-}
-
-.workpage.workpage-night {
-  animation: timelapse-night 1s ease 1 forwards;
-
-}
-
-.div-theme-button {
-  padding: 1%;
+.footer-content {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.button.sunset-theme{
-  background-color: #a03b00;
+.footer-copy {
+  font-size: 0.875rem;
+  color: var(--muted);
 }
 
-.button.day-theme{
-  background-color: #ffffff; color: #00062a;
+.heart {
+  color: var(--coral);
+  font-style: normal;
 }
 
-.button.night-theme{
-  background-color: #444861;
+.footer-copy strong {
+  color: var(--text);
+  font-weight: 600;
 }
 
-@keyframes timelapse-day {
-  0% {
-    background-position: 0% 0%;
-  }
-
-  100% {
-    background-position: 55% 40%;
-  }
-
+.footer-tech {
+  font-size: 0.75rem;
+  color: var(--subtle);
+  letter-spacing: 0.05em;
 }
 
-@keyframes timelapse-sunset {
-  0% {
-    background-position: 55% 40%;
-  }
-
-  100% {
-    background-position: 20% 30%;
-  }
-
-}
-
-@keyframes timelapse-night {
-  0% {
-    background-position: 20% 30%;
-  }
-
-  100% {
-    background-position: 0% 0%;
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
   }
 }

@@ -1,53 +1,109 @@
-<div class="work-information">
-  <br>
-  <div class="text-formatation" style="font-size: 22px; font-weight: 600;"
-    [ngClass]="{'dark-theme': !this.themeService.isThemeDay(), 'light-theme': this.themeService.isThemeDay()}">
-    Histórico Academico </div>
-  <br>
-  <div class="text-background">
-    <div class="text-formatation"
-      [ngClass]="{'dark-theme': !this.themeService.isThemeDay(), 'light-theme': this.themeService.isThemeDay()}">
-      <li> Iniciei minha formação acadêmica em 2019, me matriculando no curso de Análise e Desenvolvimento de Sistemas
-        (<b
-          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">ADS</b>)
-        pelo Instituto Federal do Piauí (<b
-          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">IFPI</b>).
-        Sem conhecimento prévio sobre programação foi um
-        desafio interessante e muito gratificante.
-      </li>
-      <br>
-      <li> Durante o andamento do curso, procurei atividades extracurriculares para engrandecer ainda mais meus
-        conhecimentos, dentre elas: palestras, monitoria, estágio, eventos voltados para programação e laboratório de
-        pesquisa. Com essas atividades, tive a oportunidade de conhecer a área de <b
-          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Game
-          Developer</b> e ampliar meu
-        <b
-          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">networking
-        </b> dentro e fora da instituição.
-      </li>
-      <br>
-      <li> Em 2021, em meio a pandemia, resolvi iniciar a busca por estágios, a fim de garantir mais habilidades
-        profissionais, foi então que iniciei meu estágio de 9 meses na empresa Simples Informática. Com uma boa
-        performance e aproveitamento, desenvolvi habilidades técnicas voltadas para o desenvolvimento com o
-        <b
-          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Front-end</b>
-        e <b
-          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Back-end</b>,
-        além de algumas <b
-          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">soft
-          skills</b>.
-      </li>
-      <br>
-      <li> Em 2022, conclui minha formação acadêmica, focando completamente no desenvolvimento do meu <b
-          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">TCC</b>.
-        O tema
-        final abordado foi o uso de <b
-          [ngClass]="{'day-bold-color': this.themeService.isThemeDay() , 'sunset-bold-color': !this.themeService.isThemeDay()}">Realidade
-          Virtual</b> no ensino de fibra óptica. Para esse projeto foi simulado
-        no ambiente virtual, um dos laboratórios do IFPI - Campus Teresina Central, através do uso da Unreal Engine e o
-        equipamento Oculos Quest 2.
-      </li>
+<div class="exp-section">
+  <span class="exp-watermark" aria-hidden="true">02</span>
+
+  <div class="section-inner exp-inner">
+
+    <div class="section-header">
+      <p class="section-label">trajetória</p>
+      <h2 class="section-heading">Experiência &amp; Formação</h2>
+      <div class="section-divider"></div>
     </div>
 
+    <div class="timeline">
+
+      <!-- ── Work: Current job ─────────────────────── -->
+      <div class="timeline-item">
+        <div class="tl-marker work">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+        </div>
+        <div class="tl-content">
+          <div class="tl-meta">
+            <span class="tl-period current">
+              <span class="period-dot"></span>
+              Jun 2023 — Presente
+            </span>
+            <span class="tl-tag work-tag">Emprego atual</span>
+          </div>
+          <h3 class="tl-role">Desenvolvedor Full-Stack</h3>
+          <p class="tl-company">Simples Informática e Contabilidade Ltda.</p>
+          <ul class="tl-bullets">
+            <li>Desenvolvimento e manutenção de sistemas web com Angular, JavaScript e CSS</li>
+            <li>Integração com APIs REST e manipulação de XML/XSD para sistemas governamentais</li>
+            <li>Desenvolvimento back-end em Delphi, criação e validação de XML/XSD</li>
+            <li>Refatoração de código (Clean Code), otimização de performance e correção de bugs</li>
+            <li>Mentoria e suporte técnico a novos desenvolvedores da equipe</li>
+          </ul>
+          <div class="tl-skills">
+            <span class="tl-chip">Angular</span>
+            <span class="tl-chip">TypeScript</span>
+            <span class="tl-chip">Delphi</span>
+            <span class="tl-chip">APIs REST</span>
+            <span class="tl-chip">XML/XSD</span>
+            <span class="tl-chip">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Work: Internship ─────────────────────── -->
+      <div class="timeline-item">
+        <div class="tl-marker work">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+        </div>
+        <div class="tl-content">
+          <div class="tl-meta">
+            <span class="tl-period">2021 — 2022 · 9 meses</span>
+            <span class="tl-tag intern-tag">Estágio</span>
+          </div>
+          <h3 class="tl-role">Estagiário em Desenvolvimento de Software</h3>
+          <p class="tl-company">Simples Informática e Contabilidade Ltda.</p>
+          <ul class="tl-bullets">
+            <li>Desenvolvimento front-end com Angular 9+ e consumo de APIs REST</li>
+            <li>Construção de telas dinâmicas e responsivas</li>
+            <li>Desenvolvimento back-end em Delphi, criando serviços e funcionalidades</li>
+            <li>Geração e leitura de arquivos XML/XSD para integração governamental</li>
+          </ul>
+          <div class="tl-skills">
+            <span class="tl-chip">Angular</span>
+            <span class="tl-chip">JavaScript</span>
+            <span class="tl-chip">Delphi</span>
+            <span class="tl-chip">XML/XSD</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Education ─────────────────────────────── -->
+      <div class="timeline-item">
+        <div class="tl-marker edu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+        </div>
+        <div class="tl-content">
+          <div class="tl-meta">
+            <span class="tl-period">2019 — 2023</span>
+            <span class="tl-tag edu-tag">Graduação</span>
+          </div>
+          <h3 class="tl-role">Análise e Desenvolvimento de Sistemas (ADS)</h3>
+          <p class="tl-company">Instituto Federal do Piauí (IFPI) — Campus Teresina Central</p>
+          <ul class="tl-bullets">
+            <li>Participação no laboratório de pesquisa <strong>LABIRAS</strong> — projetos com Unreal Engine (Blueprint)</li>
+            <li>TCC: <em>Realidade Virtual no ensino de fibra óptica</em> — projeto inicial desenvolvido para a Huawei, utilizando Unreal Engine e Oculus Quest 2</li>
+            <li>Atividades extracurriculares: monitoria, palestras e eventos de programação</li>
+          </ul>
+          <div class="tl-skills">
+            <span class="tl-chip">Python</span>
+            <span class="tl-chip">PHP</span>
+            <span class="tl-chip">JavaScript</span>
+            <span class="tl-chip">Unreal Engine</span>
+            <span class="tl-chip">Blueprint</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /timeline -->
   </div>
 </div>

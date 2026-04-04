@@ -4,32 +4,34 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ThemeService {
-  private _timePeriod: string[] = ['day', 'sunset', 'night'];
-  private _indexPeriod = 0;
+  private _dark = true;
 
-  constructor() {
-    this.getTheme();
+  isDark(): boolean {
+    return this._dark;
   }
 
-  getTheme(){
-    return this._timePeriod[this._indexPeriod];
+  toggle(): void {
+    this._dark = !this._dark;
   }
 
-  isThemeDay(){
-    return this._timePeriod[this._indexPeriod] === 'day';
+  /* Legacy compat – kept so other components don't break */
+  getTheme(): string {
+    return this._dark ? 'night' : 'day';
   }
 
-  isThemeSunset(){
-    return this._timePeriod[this._indexPeriod] === 'sunset';
+  isThemeDay(): boolean {
+    return !this._dark;
   }
 
-  isThemeNight(){
-    return this._timePeriod[this._indexPeriod] === 'night';
+  isThemeSunset(): boolean {
+    return false;
   }
 
-  nextPeriod(){
+  isThemeNight(): boolean {
+    return this._dark;
+  }
 
-    this._indexPeriod += 1;
-    this._indexPeriod > 2 ? this._indexPeriod = 0 : null;
+  nextPeriod(): void {
+    this.toggle();
   }
 }

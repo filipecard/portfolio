@@ -1,39 +1,33 @@
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+<div class="portfolio-root" [class.light-theme]="!themeService.isDark()">
+  <app-menu-bar></app-menu-bar>
 
+  <main class="main-content">
+    <section id="inicio">
+      <app-data-profile></app-data-profile>
+    </section>
 
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <section id="experiencia">
+      <app-academic-record></app-academic-record>
+    </section>
 
+    <section id="habilidades">
+      <app-technical-knowledge></app-technical-knowledge>
+    </section>
 
-<div class="workpage" id="maindiv">
-  <div class="orientation-menu-theme-button">
-    <app-menu-bar></app-menu-bar>
-    <div class="data-container">
+    <section id="contato">
+      <app-info-contato></app-info-contato>
+    </section>
+  </main>
 
-      <app-data-profile *ngIf="choiceDataOptionService.choice[0]"></app-data-profile>
-      <app-academic-record *ngIf="choiceDataOptionService.choice[1]"></app-academic-record>
-      <app-technical-knowledge *ngIf="choiceDataOptionService.choice[2]"></app-technical-knowledge>
-      <app-info-contato *ngIf="choiceDataOptionService.choice[3]"></app-info-contato>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-line"></div>
+      <div class="footer-content">
+        <span class="footer-copy">
+          Feito com <span class="heart">♥</span> por <strong>Filipe Cardoso</strong>
+        </span>
+        <span class="footer-tech mono">Angular 19 · TypeScript</span>
+      </div>
     </div>
-
-    <div class="div-theme-button">
-      <button class="button day-theme" *ngIf="this.themeService.getTheme() === 'day'" mat-fab
-        (click)="runAnimation()">
-        <span class="material-symbols-outlined">{{themeName[0]}}</span>
-      </button>
-      <button class="button sunset-theme" *ngIf="this.themeService.getTheme() === 'sunset'" mat-fab
-        (click)="runAnimation()">
-        <span class="material-symbols-outlined">{{themeName[1]}}</span>
-      </button>
-      <button class="button night-theme" *ngIf="this.themeService.getTheme() === 'night'" mat-fab
-        (click)="runAnimation()">
-        <span class="material-symbols-outlined">{{themeName[2]}}</span>
-      </button>
-    </div>
-
-  </div>
-  <br><br>
+  </footer>
 </div>
